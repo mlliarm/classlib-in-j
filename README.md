@@ -11,10 +11,10 @@ Got the *.atf functions from [this repository](https://github.com/Angeldude/clas
 
 I've build localy [GNU APL 2.0](https://ftp.gnu.org/gnu/apl/) in order to read the *.atf files.
 
-After that, running the following code in my GNU/Linux environment calling the GNU APL binary printed the names of the functions in a txt file named `functions.txt`:
+After that, running the following code in my GNU/Linux environment calling the GNU APL binary printed the names of the functions in a txt file named `funciones.txt`:
 
 ```bash
-echo -e ")IN your_file.atf\n{⎕←⎕CR ⍵}¨⎕NL 3\n)OFF" | apl-2.0 --silent --noSV > todas_las_funciones.txt
+echo -e ")IN ./classlib.atf\n)FNS\n)OFF" | apl-2.0 --silent --noSV > funciones.txt
 ```
 
 Then I wanted to extract the APL code per function without having to read all the ATF files from Angeldude's project.
@@ -79,6 +79,10 @@ print(f"Finished! All function contents have been saved cleanly to '{output_file
 
 ### Output
 
-For the function names check: `functions.txt`
+For the function names check: `funciones.txt`
 
-For the function definitions check: `function-definitions.txt`
+For the function definitions check: `contenido-functiones.txt`
+
+### J translation
+
+Ongoing work. See `j/` folder.
