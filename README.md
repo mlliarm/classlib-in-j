@@ -79,11 +79,15 @@ print(f"Finished! All function contents have been saved cleanly to '{output_file
 
 ### Output
 
+#### Folder `apl/`
+
 - For the function names check: `funciones.txt`
 
 - For the function definitions check: `contenido-funciones.txt`
 
 - For the function definitions with APL syntax highlight check: `contenido-funciones.apl`
+
+- For the original file that I extracted the functions, should you want to load it in GNU APL with `)IN ./classlib.atf`: `classlib.atf`
 
 ### J translation
 
