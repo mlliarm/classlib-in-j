@@ -3,7 +3,7 @@ A translation of Charles Sims' CLASSLIB APL library into J.
 
 ## CLASSLIB
 
-This was the library Charles C. Sims used in his seminal 'Abstract Algebra: A Computational Approach' book used.
+This was the library Charles C. Sims wrote and used in his seminal ['Abstract Algebra: A Computational Approach'](https://dl.acm.org/doi/abs/10.5555/781) book.
 
 Got the *.atf functions from [this repository](https://github.com/Angeldude/classlib) of @Angeldude. Thanks.
 
@@ -77,9 +77,9 @@ It was hard to do it with a bash & APL code so with Gemini we created the follow
 print(f"Finished! All function contents have been saved cleanly to '{output_file}'.")
 ```
 
-### Output
+## Output
 
-#### Folder `apl/`
+### Folder `apl/`
 
 - For the function names check: `funciones.txt`
 
@@ -89,6 +89,8 @@ print(f"Finished! All function contents have been saved cleanly to '{output_file
 
 - For the original file that I extracted the functions, should you want to load it in GNU APL with `)IN ./classlib.atf`: `classlib.atf`
 
-### J translation
+### Folder `j/`
 
-Ongoing work. See `j/` folder.
+Where the J translation of the APL code is.
+
+Ongoing work.
