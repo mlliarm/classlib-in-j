@@ -79,9 +79,11 @@ print(f"Finished! All function contents have been saved cleanly to '{output_file
 
 ### Output
 
-For the function names check: `funciones.txt`
+- For the function names check: `funciones.txt`
 
-For the function definitions check: `contenido-functiones.txt`
+- For the function definitions check: `contenido-funciones.txt`
+
+- For the function definitions with APL syntax highlight check: `contenido-funciones.apl`
 
 ### J translation
 
