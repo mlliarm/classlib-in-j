@@ -39,6 +39,8 @@ After that, using the `Alt` key you'll be able to select the APL characters base
 ╚═════════════╩════╩════╩════╩════╩════╩════╩════╩════╩════╩════╩══════════╝
 ```
 
+**Caution**: say bye bye to `Alt+Tab` window rotation after applying the above command. You'll have to use a different key for that.
+
 ### Function names
 
 After that, running the following code in my GNU/Linux environment calling the GNU APL binary printed the names of the functions in a txt file named `funciones.txt`:
