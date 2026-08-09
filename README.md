@@ -74,15 +74,10 @@ the `∇` character, so it's better visible that this is the definition of a fun
 ### Folder `apl/`
 
 - `funciones.txt`: contains the names of all the 227 functions.
-
 - `contenido_funciones.txt`: contains the definitions of all the functions.
-
 - `contenido_funciones.apl`: contains the syntax highlighted definitions of all the functions.
-
 - `contenido_funciones_with_del.txt`: contains the definitions of all the functions in edit mode.
-
 - `contenido_funciones_with_del.apl`: contains the syntax highlighted definitions of all the functions in edit mode.
-
 - `classlib.atf`: the original ATF file that contains all the functions. You need to use that if you want to use APL with Sim's book.
 
 ### Folder `j/`
