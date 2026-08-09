@@ -69,6 +69,30 @@ As we know, in edit mode the header of the function starts with `∇` and the la
 For this reason with the help of Gemini we created a [second python script](./tools/wrap_del.py) that added in the start and the end of the functions
 the `∇` character, so it's better visible that this is the definition of a function. You can find the corresponding files [here in TXT](./apl/contenido_funciones_with_del.txt) and [here in APL highlighted syntax](./apl/contenido_funciones_with_del.apl).
 
+## Use
+
+### APL
+
+To use CLASSLIB with APL, import the library `classlib.atp` as follows:
+
+- GNU APL
+
+```apl
+)IN ./apl/classlib.atf
+```
+
+- Dyalog APL
+
+```apl
+]IN ./apl/classlib.atf
+```
+
+Have fun !
+
+### J
+
+TBD
+
 ## Output
 
 ### Folder `apl/`
