@@ -59,63 +59,15 @@ echo -e ")IN ./classlib.atf\n)FNS\n)OFF" | apl-2.0 --silent --noSV > funciones.t
 
 Then I wanted to extract the APL code per function without having to read all the ATF files from Angeldude's project.
 
-It was hard to do it with a bash & APL code so with Gemini we created the following solution:
+It was hard to do it with a bash & APL code so with Gemini we created [this python script](./tools/extract_funciones.py) which saved inside
+the [TXT](./apl/contenido_funciones.txt) file the definitions. A syntax highlighted version of that is the [APL](./apl/contenido_funciones.apl) file.
 
-```python3
- import subprocess
- import os
- import re
- 
- # Define file paths
- input_file = "funciones.txt"
- output_file = "contenido_funciones.txt"
- 
- # Regex pattern to match all types of ANSI escape sequences (colors, line clears)
- ansi_escape_pattern = re.compile(r'\x1B(?:[@-Z\\-_]|\[[0-?]*[ -/]*[@-~])')
- 
- # 1. Read and parse function names from funciones.txt
- if not os.path.exists(input_file):
-     print(f"Error: {input_file} not found. Please make sure it exists.")
-     exit(1)
- 
- with open(input_file, "r", encoding="utf-8") as f:
-     raw_content = f.read()
- 
- # Split by spaces/newlines and filter out any empty strings
- function_names = [name.strip() for name in raw_content.split() if name.strip()]
- 
- print(f"Found {len(function_names)} functions to extract. Starting processing...")
- 
- # 2. Iterate through each function name and query GNU APL
- with open(output_file, "w", encoding="utf-8") as out:
-     for idx, fn_name in enumerate(function_names, start=1):
-         print(f"[{idx}/{len(function_names)}] Extracting: {fn_name}...")
- 
-         # Prepare the exact sequence of commands for GNU APL
-         apl_commands = f")IN ./classlib.atf\n⎕←⎕CR '{fn_name}'\n)OFF\n"
- 
-         # Kept the exact same working flags from your successful test
-         process = subprocess.Popen(
-             ["apl-2.0", "--silent", "--noSV"],
-             stdin=subprocess.PIPE,
-             stdout=subprocess.PIPE,
-             stderr=subprocess.PIPE,
-             text=True
-         )
- 
-         stdout, stderr = process.communicate(input=apl_commands)
- 
-         # Scrub the raw string to remove ANSI layout codes completely
-         clean_stdout = ansi_escape_pattern.sub('', stdout).strip()
- 
-         # Write custom header and the clean extracted code to your contents file
-         out.write(f"{'='*50}\n")
-         out.write(f"FUNCTION: {fn_name}\n")
-         out.write(f"{'='*50}\n")
-         out.write(clean_stdout + "\n\n")
- 
-print(f"Finished! All function contents have been saved cleanly to '{output_file}'.")
-```
+A catch here: because `⎕←⎕CR← 'FUNCTION_NAME'` returns the function content as it is, one might want to see how it looks in edit mode.
+
+As we know, in edit mode the header of the function starts with `∇` and the last line of the function is `∇`.
+
+For this reason with the help of Gemini we created a [second python script](./tools/wrap_del.py) that added in the start and the end of the functions
+the `∇` character, so it's better visible that this is the definition of a function. You can find the corresponding files [here in TXT](./apl/contenido_funciones_with_del.txt) and [here in APL highlighted syntax](./apl/contenido_funciones_with_del.apl).
 
 ## Output
 
@@ -123,9 +75,13 @@ print(f"Finished! All function contents have been saved cleanly to '{output_file
 
 - `funciones.txt`: contains the names of all the 227 functions.
 
-- `contenido-funciones.txt`: contains the definitions of all the functions.
+- `contenido_funciones.txt`: contains the definitions of all the functions.
 
-- `contenido-funciones.apl`: contains the syntax highlighted definitions of all the functions.
+- `contenido_funciones.apl`: contains the syntax highlighted definitions of all the functions.
+
+- `contenido_funciones_with_del.txt`: contains the definitions of all the functions in edit mode.
+
+- `contenido_funciones_with_del.apl`: contains the syntax highlighted definitions of all the functions in edit mode.
 
 - `classlib.atf`: the original ATF file that contains all the functions. You need to use that if you want to use APL with Sim's book.
 
