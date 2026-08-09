@@ -1,5 +1,7 @@
 # classlib-in-j
-A translation of Charles Sims' CLASSLIB APL library into J.
+A port of Charles Sims' CLASSLIB APL library into J.
+
+*Note:* For now only the full APL code is available, along with instructions of use. 
 
 ## CLASSLIB
 
