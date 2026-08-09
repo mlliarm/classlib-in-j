@@ -15,7 +15,7 @@ I've build localy [GNU APL 2.0](https://ftp.gnu.org/gnu/apl/) in order to read t
 
 If you want to play with the `classlib.atf` library with GNU APL 2.0 and follow Sim's book with APL you'll need to install an APL keyset on your OS.
 
-Assuming that you have a GNU/Linux flavor, [the easier way to do this](https://github.com/ilovezfs/gnu-apl/blob/master/README-3-keyboard), and use Dyalog's APL keyset is to run within GNU APL's folder:
+Assuming that you have a GNU/Linux flavor, [one way to do this](https://github.com/ilovezfs/gnu-apl/blob/master/README-3-keyboard), and use Dyalog's APL keyset is to run within GNU APL's folder:
 
 ```bash
 xmodmap support-files/Dyalog-Keyboard/apl.xmodmap
@@ -40,6 +40,8 @@ After that, using the `Alt` key you'll be able to select the APL characters base
 ```
 
 **Caution**: say bye bye to `Alt+Tab` window rotation after applying the above command. You'll have to use a different key for that.
+
+Another way to get the APL keyset in your modern GNU/Linux or similar `*`nix systemis to go to the Layouts and search for `APL` and choose a variant. The only downside is that you'll have to switch from EN to APL and back when you're going through the code examples of Sims' book. But one cannot have everything. At least this solution won't mess up any other keyboard layouts that you may have in parallel to EN.
 
 Now load the library `classlib.atf` and have fun:
 
