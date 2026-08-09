@@ -11,7 +11,7 @@ Got the `apl/classlib.atf` file that contains all the functions from [this repos
 
 ### GNU APL 2.0
 
-I've build localy [GNU APL 2.0](https://ftp.gnu.org/gnu/apl/) in order to read the *.atf files.
+I've build localy [GNU APL 2.0](https://ftp.gnu.org/gnu/apl/) in order to read the classlib.atf file. If you're a Dyalog APL user, you can use that too.
 
 If you want to play with the `classlib.atf` library with GNU APL 2.0 and follow Sim's book with APL you'll need to install an APL keyset on your OS.
 
