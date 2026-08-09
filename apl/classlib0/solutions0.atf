@@ -1,0 +1,52 @@
+XNPP 0 10                                                                     ø
+XNIO 0 1                                                                      ø
+XNCT 0 1Eý13                                                                  ø
+XCFC 1 6 .,*0_ý                                                               ø
+XNRL 0 16807                                                                  ø
+XCPR 1 1                                                                      ø
+XCLX 1 0                                                                      ø
+ FDECCARRY FX 'Z½DECCARRY X;SGN' 'ä EXERCISE 2.5.2' ' Z½,X' ' SGN½1' 'L       ø
+ OOP:Z½(+/^\Z=0)ÇZ' ' ¸(0ôæZ)/NONEMPTY' ' ¸Z½,0' 'NONEMPTY:¸(0<1ÆZ)/POS'       ø
+  ' SGN½-SGN' ' Z½-Z' 'POS:¸(^/(0óZ),Z<10)/DONE' ' Z½(0,10|Z)+(Z ZQUOT 1       ø
+X0),0' ' ¸LOOP' 'DONE:Z½SGNõZ'                                                 ø
+XFDECDIFF FX 'Z½X DECDIFF Y' 'ä EXERCISE 2.5.3' ' Z½X DECSUM-Y'               ø
+ FDECSUM FX 'Z½X DECSUM Y;M' 'ä EXERCISE 2.5.2' ' M½(æX½,X)©æY½,Y' ' Z½       ø
+XDECCARRY((-M)ÆX)+(-M)ÆY'                                                      ø
+ FDECPROD FX 'Z½X DECPROD Y;IO;U;V' 'ä EXERCISE 2.5.2' ' IO½0' ' U½(Y       ø
+X½,Y)ø.õX½,X' ' V½(-ìæY)è((æU)+0,ý1+æY)ÆU' ' Z½DECCARRY+ðV'                    ø
+ FDECQUOT FX 'Z½X DECQUOT Y;SGNX;SGNY;L;U' 'ä EXERCISE 2.5.3' ' SGNX½õ1       ø
+ ÆX½DECCARRY X' ' SGNY½õ1ÆY½DECCARRY Y' ' ¸(SGNYô0)/NONZERO' ' ¸(SGNXô0)       ø
+ /DE' ' Z½,1' ' ¸0' 'DE:''DOMAIN ERROR''' ' ¸0' 'NONZERO:X½|X' ' Y½|Y' '       ø
+  Z½,0' 'LOOP:¸(0>L½(æX)-æY)/DONE' ' ¸(^/0=U½((-L)ÇX)-Y)/SUBTRACT' ' ¸(0       ø
+ <U[(Uô0)ì1])/SUBTRACT' ' ¸(0=L)/DONE' ' L½L-1' 'SUBTRACT:X½X DECDIFF Y,       ø
+ Læ0' ' Z½Z DECSUM 1,Læ0' ' ¸LOOP' 'DONE:Z½ZõSGNXõSGNY' ' ¸((SGNX=1)ë^/X       ø
+X=0)/0' ' Z½Z DECDIFF SGNY'                                                    ø
+ FFIRSTPRIME FX 'P½FIRSTPRIME N' 'ä EXERCISE 2.4.5' ' ¸(N>2)/ODD' ' P½2       ø
+X' ' ¸0' 'ODD:P½1+2õ¾Nö2' 'LOOP:¸(1=æZFACTOR P)/0' ' P½P+2' ' ¸LOOP'           ø
+ FGCDV FX 'D½GCDV A;M' 'ä EXERCISE 2.2.22' ' ¸(0<æA½(Aô0)/A½,A)/LOOP' '       ø
+X ¸D½0' 'LOOP:A½(Aô0)/A½M,(M½¾/A)|A½|A' ' ¸(1<æA)/LOOP' ' D½(ì0)æA'            ø
+ FGCDVX FX 'D½GCDVX A;I;M;Q;X;S' 'ä EXERCISE 2.2.23' ' ¸(0<æA½,A)/NONEM       ø
+ PTY' ' r½ì0' ' ¸D½0' 'NONEMPTY:r½(2ææA)æ1,(æA)æ0' ' S½(A<0)/ìæA' ' r[S;       ø
+ ]½-r[S;]' ' A[S]½-A[S]' 'LOOP:A½(X½Aô0)/A' ' r½Xðr' ' ¸(1òæA)/DONE' ' I       ø
+ ½AìM½¾/A' ' Q½A ZQUOT M' ' A½M,M|A' ' r½r[I;],[IO]r-Qø.õr[I;]' ' ¸LOOP       ø
+X' 'DONE:D½(ì0)æA' ' r½,r'                                                     ø
+ FLCMV FX 'M½LCMV A;N;A1;A2;D' 'ä EXERCISE 2.2.24' ' ¸(0<æA½,A)/NONEMPT       ø
+ Y' ' M½1' ' ¸0' 'NONEMPTY:¸(^/Aô0)/NONZERO' ' ¸M½0' 'NONZERO:¸(1<æA)/LO       ø
+ NG' ' M½(ì0)æ|A' ' ¸0' 'LONG:¸(0=2|æA)/EVEN' ' A½A,1' 'EVEN:N½(æA)ö2' '       ø
+X D½(A1½NÆA)ZGCD A2½NÇA' ' A½¾(A1õA2)öD' ' ¸NONZERO'                           ø
+ FLUCASLEHMER FX 'T½LUCASLEHMER P;N;S;I' 'ä EXERCISE 2.5.4' ' ¸(1=æZFAC       ø
+ TOR P)/PRIME' ' ''DOMAIN ERROR''' ' ¸0' 'PRIME:N½(,ý1)MPZSUM0(,2)MPZPOW       ø
+ ER0 P' ' S½,4' ' I½1' 'LOOP:¸(PóI½I+1)/DONE' ' S½N MPZREM0(,ý2)MPZSUM0        ø
+XS MPZPROD0 S' ' ¸LOOP' 'DONE:T½(1=æS)^0=1ÆS'                                  ø
+ FPHI FX 'M½PHI N;P;Q;E' 'ä EXERCISE 3.6.17' ' P½SSORT Q½ZFACTOR N' ' E       ø
+X½+/Pø.=Q' ' M½õ/(P*E-1),P-1'                                                  ø
+ FPOWERR FX 'Y½X POWERR N' 'ä EXERCISE 3.1.27' ' ¸(N>0)/POS' ' Y½1' ' ¸       ø
+X0' 'POS:Y½YõY½X POWERR¾Nö2' ' ¸(0=2|N)/0' ' Y½XõY'                            ø
+XFSETDIFF FX 'C½A SETDIFF B' 'ä EXERCISE 1.1.14' ' C½(~AîB)/A'                ø
+XFSETEQ FX 'T½A SETEQ B' 'ä EXERCISE 1.1.14' ' T½^/(AîB),BîA'                 ø
+XFSETINT FX 'C½A SETINT B' 'ä EXERCISE 1.1.14' ' C½(AîB)/A'                   ø
+XFSETUN FX 'C½A SETUN B' 'ä EXERCISE 1.1.14' ' C½SSORT A,B'                   ø
+ FSIEVE FX 'P½SIEVE N;IO;Q;N;M' ' IO½1' ' P½ì0' ' Q½1ÇìN' 'LOOP:¸((0=       ø
+XæQ)ëN<MõM½1ÆQ)/DONE' ' P½P,M' ' Q½(0ôM|Q)/Q' ' ¸LOOP' 'DONE:P½P,Q'            ø
+ FXXPOWER FX 'G½F XXPOWER N' 'ä EXERCISE 3.1.26' ' G½ìæF' 'LOOP:¸(N=0)/       ø
+X0' ' ¸(0=2|N)/EVEN' ' G½G[F]' 'EVEN:F½F[F]' ' N½¾Nö2' ' ¸LOOP'                ø

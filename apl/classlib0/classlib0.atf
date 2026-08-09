@@ -1,0 +1,1049 @@
+XNPP 0 10                                                                     ø
+XNIO 0 1                                                                      ø
+XNCT 0 1Eý13                                                                  ø
+XCFC 1 6 .,*0_ý                                                               ø
+XNRL 0 16807                                                                  ø
+XCPR 1 1                                                                      ø
+XCLX 1 0                                                                      ø
+ FZXDIFF FX 'C½A ZXDIFF B' 'ä COMPUTES THE DIFFERENCE OF TWO ARRAYS OF        ø
+XINTEGER' 'ä POLYNOMIALS.' 'C½A ZXSUM-B'                                       ø
+ FZXEVAL FX 'Y½A ZXEVAL B;IO' 'ä EVALUATES THE INTEGER POLYNOMIALS IN        ø
+  A  AT  B.' 'IO½0' 'DERR^/(,A=¾A),,B=¾B' 'B½((æB),1)æB' 'EXPANDV' 'B½(       ø
+Xý1ÇæB)æB' 'Y½+/AõBø.*ìý1ÆæA'                                                  ø
+ FZXFCLEAR FX 'ZXFCLEAR;I' 'ä EXPUNGES THE VARIABLE ZXRT DESCRIBING THE       ø
+X CURRENT' 'ä QUOTIENT ALGEBRA OF  Z[X].' 'I½EX ''ZXRT'''                     ø
+ FZXFDIFF FX 'C½A ZXFDIFF B' 'ä COMPUTES THE DIFFERENCE OF TWO ARRAYS I       ø
+XN THE' 'ä CURRENT QUOTIENT ALGEBRA OF  Z[X].' 'C½A ZXFSUM-B'                  ø
+ FZXFSUM FX 'C½A ZXFSUM B;D;E' 'ä COMPUTES THE SUM OF TWO ARRAYS OVER T       ø
+ HE CURRENT' 'ä QUOTIENT ALGEBRA OF Z[X].' 'D½ý1ÆæC½A ZXSUM B' 'DERR Dó+       ø
+ /æZXRT' '¸(DóE½ý1ÆæZXRT)/0' 'C½(((ý1ÇæC),E)ÆC)+(((-ææC)ÆE)ÇC)+.õ((D-E),       ø
+XE)ÆZXRT' 'D½1©+/ë\èëð((õ/ý1ÇæC),E)æCô0' 'C½((ý1ÇæC),D)ÆC'                     ø
+ FZXFINIT FX 'ZXFINIT F;IO;D;I' 'ä INITIALIZES THE CURRENT QUOTIENT AL       ø
+ GEBRA OF Z[X].' 'IO½0' 'DERR^/(1=ææF),,F=¾F' 'DERR 1óD½ý1++/ë\è0ôF' 'D       ø
+ ERR 1=|F[D]' 'ZXRT½((D-1),D)æ-F½F[D]õDÆF' 'I½0' 'LOOP:¸((D-1)óI½I+1)/0'       ø
+X 'ZXRT[I;]½(0,ý1ÇZXRT[I-1;])-FõZXRT[I-1;D-1]' '¸LOOP'                         ø
+ FZXFPOWER FX 'C½A ZXFPOWER B;R;RHO;I;J;M;N;D' 'ä COMPUTES THE B-TH POW       ø
+ ER OF  A  IN THE CURRENT' 'ä QUOTIENT OF  R[X].' 'B½((æB),1)æB' 'EXPAND       ø
+ V' 'N½ý1ÆæZXRT' 'R½õ/RHO½ý1ÇæA' 'A½(R,M½ý1ÆæA)æA' 'C½(R,N)æNÆ1' 'I½(B>0       ø
+ )/ìæB½,B' 'LOOP:C[J;]½((æJ),N)ÆC[J;]ZXFPROD A[J½(2|B[I])/I;]' '¸(0=æI½(       ø
+ B[I]ò2)/I)/END' 'A[I;]½A[I;]ZXFPROD A[I;]' 'B[I]½¾B[I]ö2' '¸LOOP' 'END:       ø
+XD½1©©/,+/ë\è0ôC' 'C½(RHO,D)æ(R,D)ÆC'                                          ø
+ FZXFPROD FX 'C½A ZXFPROD B;D;E' 'ä COMPUTE THE PRODUCT OF TWO ARRAYS O       ø
+ VER THE' 'ä CURRENT QUOTIENT ALGEBRA OF Z[X].' 'C½A ZXPROD B' 'DERR(D½ý       ø
+ 1ÆæC)ó+/æZXRT' '¸(DóE½ý1ÆæZXRT)/0' 'C½(((ý1ÇæC),E)ÆC)+(((-ææC)ÆE)ÇC)+.õ       ø
+X((D-E),E)ÆZXRT' 'D½1©+/ë\èëð((õ/ý1ÇæC),E)æCô0' 'C½((ý1ÇæC),D)ÆC'              ø
+ FZXINTERP FX 'C½A ZXINTERP B;IO;L;RHO;RC;G;I;M;N;NOTEST;D' 'ä INTERPO       ø
+ LATES INTEGER POLYNOMIALS.  THE VECTOR  A' 'ä GIVES THE INTEGER VALUES        ø
+ OF THE ARGUMENT AND THE' 'ä VECTORS ALONG THE LAST AXIS OF  B  GIVE THE       ø
+  INTEGER' 'ä VALUES WHICH THE POLYNOMIALS ARE TO HAVE.' 'IO½1' 'DERR^/       ø
+ (1=ææA),(0<æA),(A=¾A),(,B=¾B),(0<ææB),(1ÆæA)=ý1ÆæB' 'RC½õ/RHO½ý1ÇæB' 'B       ø
+ ½(RC,L½æA)æB' 'C½(RC,1)æB[;1]' 'G½(-A[1]),1' 'NOTEST½I½1' 'LOOP:¸(L<I½I       ø
+ +1)/END' 'M½(RC,1)æB[;I]-C ZXEVAL RCæA[I]' 'N½G ZXEVAL A[I]' 'DERR^/,0=       ø
+ N|M' 'C½C ZXSUM((RC,æG)æG)ZXPROD¾MöN' 'G½G ZXPROD(-A[I]),1' '¸LOOP' 'EN       ø
+XD:C½(RHO,ý1ÆæC)æC' 'D½1©©/,+/ë\èCô0' 'C½(RHO,D)ÆC'                            ø
+ FZXLEAD FX 'C½ZXLEAD A;EPSILON' 'ä COMPUTES THE LEADING COEFFICIENTS O       ø
+XF AN ARRAY OF' 'ä INTEGER POLYNOMIALS.' 'EPSILON½0' 'C½RXLEAD A'              ø
+ FZXMATPROD FX 'C½A ZXMATPROD B;IO;X;AX;BX;RR;RA;RB;NOTEST' 'ä COMPUTE       ø
+ S THE MATRIX PRODUCT OF TWO NONSCALAR ARRAYS' 'ä OF INTEGER POLYNOMIALS       ø
+ .' 'IO½1' 'DERR^/(1ó(ææA),ææB),(æA)[ý1+ææA]=1ÆæB' 'C½((RA½ý2ÇæA),(RB½ý       ø
+ 1Ç1ÇæB),1)æ0' 'X½1=ì1ÆæB' 'RR½((æRA)+ìæRB),(ìæRA),ææC' 'NOTEST½1' 'LOOP       ø
+ :AX½RRí(RB,RA,ý1ÆæA)æX/[ý1+ææA]A' 'BX½((ý1ÇæC),ý1ÆæB)æXðB' 'C½C ZXSUM A       ø
+XX ZXPROD BX' '¸(~1ÆX½ý1èX)/LOOP'                                              ø
+ NBIGINV 1 50 1 416347 564385 754637 356251 555937 372722 692421 694764        ø
+ 358869 388076 902744 505494 949639 545488 755533 561217 833761 904084 2       ø
+ 81090 340130 572038 313620 160778 656143 776323 771968 467359 775981 11       ø
+ 363 825431 856786 127780 714724 454910 63491 235199 920209 538488 95310       ø
+X4 920088 275987 518335 283952 925450 345471 132911 687127 124557 441543       ø
+ NBIGPRIMES 1 50 999221 999233 999239 999269 999287 999307 999329 999331       ø
+  999359 999371 999377 999389 999431 999433 999437 999451 999491 999499        ø
+ 999521 999529 999541 999553 999563 999599 999611 999613 999623 999631 9       ø
+ 99653 999667 999671 999683 999721 999727 999749 999763 999769 999773 99       ø
+ 9809 999853 999863 999883 999907 999917 999931 999953 999959 999961 999       ø
+X979 999983                                                                    ø
+ FCCONJ FX 'B½CCONJ A' 'ä COMPUTES THE CONJUGATE OF A COMPLEX ARRAY.' '       ø
+X¸NOTEST/BEGIN' 'A½CNRMLZ A' 'BEGIN:B½Aõ(æA)æ1 ý1'                             ø
+ FCNRMLZ FX 'B½CNRMLZ A' 'ä COMPUTES THE STANDARD FORM FOR AN ARRAY OF'       ø
+  'ä COMPLEX NUMBERS.' '¸NOTEST/BEGIN' 'DERR(0=ææA)ë(ý1ÆæA)î1 2' 'BEGIN:       ø
+XB½((ý1ÇæA),2)ÆA'                                                              ø
+ FCDIFF FX 'C½A CDIFF B' 'ä COMPUTES THE DIFFERENCE OF TWO COMPLEX ARRA       ø
+XYS.' 'C½A CSUM-B'                                                             ø
+ FCSUM FX 'C½A CSUM B' 'ä COMPUTES THE SUM OF TWO COMPLEX ARRAYS.' '¸NO       ø
+ TEST/BEGIN' 'A½CNRMLZ A' 'B½CNRMLZ B' 'EXPANDV' 'BEGIN:C½Cõ(|C)òEPSILON       ø
+Xõ©/,|C½A+B'                                                                   ø
+ FCINV FX 'B½CINV A' 'ä COMPUTES THE RECIPROCAL OF A COMPLEX ARRAY.' 'B       ø
+X½1 0 CQUOT A'                                                                 ø
+ FCQUOT FX 'C½A CQUOT B;N;R' 'ä COMPUTES THE QUOTIENT OF TWO COMPLEX AR       ø
+ RAYS.' '¸NOTEST/BEGIN' 'A½CNRMLZ A' 'B½CNRMLZ B' 'EXPANDV' 'BEGIN:DERR^       ø
+ /,0ôN½(R½(ý1ÇæB),1)æ+/BõB' 'C½((Ræ+/AõB)öN),(Ræ-/BõèA)öN' 'C½Cõ(|C)òEPS       ø
+XILONõ©/,|C'                                                                   ø
+ FCMAG FX 'B½CMAG A' 'ä COMPUTES THE MAGNITUDE OF A COMPLEX ARRAY.' 'B½       ø
+X(CNORM A)*0.5'                                                                ø
+ FCNORM FX 'B½CNORM A' 'ä COMPUTES THE COMPLEX NORM OF  A.' '¸NOTEST/BE       ø
+XGIN' 'A½CNRMLZ A' 'BEGIN:B½+/AõA'                                             ø
+ FCMATPROD FX 'C½A CMATPROD B;IO;X;AX;BX;RR;NOTEST;RA;RB' 'ä COMPUTES        ø
+ THE MATRIX PRODUCT OF TWO NONSCALAR ARRAYS' 'ä OF COMPLEX NUMBERS.' 'NO       ø
+ TEST½0' 'IO½1' 'A½CNRMLZ A' 'B½CNRMLZ B' 'DERR(^/1<(ææA),ææB)^(æA)[ý1+       ø
+ ææA]=1ÆæB' 'C½((RA½ý2ÇæA),(RB½ý1Ç1ÇæB),2)æ0' 'NOTEST½1' 'X½1=ì1ÆæB' 'RR       ø
+ ½((æRA)+ìæRB),(ìæRA),ææC' 'LOOP:AX½RRí(RB,RA,2)æX/[ý1+ææA]A' 'C½C CSUM        ø
+XAX CPROD(æC)æXðB' '¸(~1ÆX½ý1èX)/LOOP'                                         ø
+ FCPROD FX 'C½A CPROD B;R' 'ä COMPUTES THE PRODUCT OF TWO COMPLEX ARRAY       ø
+ S.' '¸NOTEST/BEGIN' 'A½CNRMLZ A' 'B½CNRMLZ B' 'EXPANDV' 'BEGIN:C½(Ræ-/A       ø
+XõB),(R½(ý1ÇæA),1)æ+/AõèB' 'C½Cõ(|C)òEPSILONõ©/,|C'                            ø
+ FCPOWER FX 'C½A CPOWER B;RHO;RC;I;J;NOTEST' 'ä COMPUTES THE B-TH POWER       ø
+  OF THE COMPLEX' 'ä ARRAY  A  USING THE BINARY POWER ALGORITHM.' 'NOTES       ø
+ T½0' 'A½CNRMLZ A' 'DERR^/(,B=¾B),,Bò0' 'B½((æB),1)æB' 'EXPANDV' 'NOTEST       ø
+ ½1' 'RC½(õ/ý1ÇRHO½æA),2' 'A½RCæA' 'C½RCæ1 0' 'I½(B>0)/ìæB½,B' 'LOOP:C[J       ø
+ ;]½C[J;]CPROD A[J½(2|B[I])/I;]' '¸(0=æI½(B[I]ò2)/I)/END' 'A[I;]½A[I;]CP       ø
+XROD A[I;]' 'B[I]½¾B[I]ö2' '¸LOOP' 'END:C½RHOæC'                               ø
+ FCPRODRED FX 'C½CPRODRED A;IO;RHO;D;E;CC;L;NOTEST' 'ä COMPUTES THE PR       ø
+ ODUCT REDUCTION ALONG THE LAST' 'ä AXIS OF AN ARRAY OF COMPLEX NUMBERS.       ø
+ ' 'NOTEST½0' 'A½CNRMLZ A' '¸(1=ææC½A)/0' 'IO½1' 'L½õ/RHO½ý2ÇæC' 'C½(L,       ø
+ ý2ÆæC)æC' '¸(0=(æC)[2])/ZERO' 'NOTEST½1' 'LOOP:¸(1=D½(æC)[2])/ONE' 'CC½       ø
+ ((L,E,2)ÆC)CPROD(L,(-E½¾Dö2),2)ÆC' 'C½CC,[2]C[;(E+1)õìDô2õE;]' '¸LOOP'        ø
+X'ZERO:C½(RHO,2)æ1 0' '¸0' 'ONE:C½(RHO,2)æC'                                   ø
+ FDERR FX 'DERR T' 'ä IF  T  IS FALSE, A MESSAGE IS PRINTED AND ALL ACT       ø
+ IVE' 'ä PROCEDURES ARE TERMINATED.' '¸T/0' '''PROCEDURE DOMAIN ERROR'''       ø
+X '¸'                                                                          ø
+ FDAQ FX 'X½DAQ A;NA;RA;M;K;R' 'ä PRODUCES THE CHARACTER ARRAY FOR DISP       ø
+ LAYING AN' 'ä ARRAY OF RATIONAL NUMBERS.' 'X½''''' '¸(0=NA½õ/æA)/0' 'RA       ø
+ ½æA½QNRMLZ A' 'M½1©ý1Çý2ÆRA' 'K½ý1ÆæX½®(NA,1)æA' 'R½(ý1++/X='' '')õNAæ0       ø
+  1' 'X½RèX' 'X½((õ/ý1ÇRA),2õK)æX' 'X[;K+IO]½''/''' 'X½X,'' ''' 'X½((ý2       ø
+XÇRA),Mõý1ÆæX)æX'                                                              ø
+ FDARV FX 'X½P DARV A;NA;RA;M;K' 'ä PRODUCES THE CHARACTER ARRAY DISPLA       ø
+ YING AN ARRAY' 'ä OF REAL VECTORS WITH P DECIMAL PLACES.' 'X½''''' '¸(0       ø
+ =NA½õ/RA½æA)/0' 'M½1©ý1Çý2ÆRA' 'K½ý1ÆæX½P®(NA,1)æA' 'X½((õ/ý1ÇRA),Kõý1Æ       ø
+XRA)æX' 'X½(0 2+æX)ÆX' 'X½((ý2ÇRA),Mõý1ÆæX)æX'                                 ø
+ FDAZV FX 'X½DAZV A' 'ä PRODUCES THE CHARACTER ARRAY DISPLAYING AN ARRA       ø
+ Y' 'ä OF INTEGER VECTORS OR REAL VECTORS ROUNDED TO THE' 'ä NEAREST INT       ø
+XEGER.' 'X½''''' '¸(0=õ/æA)/0' 'X½0 DARV A'                                    ø
+XNEPSILON 0 1Eý13                                                              ø
+ FEXPANDV FX 'EXPANDV;RA;NA;RB;NB' 'ä TESTS IF TWO ARRAYS OF VECTORS AR       ø
+ E CONFORMABLE FOR' 'ä SCALAR OPERATIONS AND IF SO, EXPANDS ONE, IF' 'ä        ø
+ NECESSARY, SO THAT THEY HAVE THE SAME SHAPE ALONG ALL' 'ä BUT THE LAST        ø
+ AXIS.  IF THEY ARE NOT CONFORMABLE, ALL' 'ä PROCESSING IS STOPPED.' 'ä        ø
+ SCALARS ARE REPLACED BY VECTORS OF LENGTH 1.' '¸(1óææA)/CHECKB' 'A½,A'        ø
+ 'CHECKB:¸(1óææB)/NEXT' 'B½,B' 'ä IF  A  OR  B  HAS ONE ENTRY, THE ARE C       ø
+ ONFORMABLE.' 'NEXT:¸(ë/1=(NA½õ/RA½ý1ÇæA),NB½õ/RB½ý1ÇæB)/EXP' '¸((æRA)ôæ       ø
+ RB)/RNKERR' '¸(ë/RAôRB)/LENERR' '¸0' 'RNKERR:''VECTOR RANK ERROR''' '¸'       ø
+  'LENERR:''VECTOR LENGTH ERROR''' '¸' 'EXP:¸((NAô1)ë(NA=1)^(NB=1)^(æRA)       ø
+X>æRB)/EXPB' 'A½(RB,ý1ÆæA)æA' '¸0' 'EXPB:B½(RA,ý1ÆæB)æB'                       ø
+ FEXPAND FX 'EXPAND;RA;NA;RB;NB' 'ä PROCEDURE TO TEST IF THE GLOBAL VAR       ø
+ IABLES  A  AND  B  ARE' 'ä CONFORMABLE FOR SCALAR OPERATIONS AND IF SO,       ø
+  TO EXPAND' 'ä ONE OF THEM, IF NECESSARY, SO THAT THEY HAVE THE SAME' '       ø
+ ä SHAPE.  IF THEY ARE NOT CONFORMABLE, ALL PROCESSING IS' 'ä STOPPED.         ø
+ IF EITHER  A  OR  B  HAS ONE ENTRY, THEY ARE' 'ä CONFOMRABLE.' '¸(ë/1=(       ø
+ NA½õ/RA½æA),NB½õ/RB½æB)/EXP' 'ä OTHERWISE, THEY MUST HAVE THE SAME RANK       ø
+ .' '¸((æRA)ôæRB)/RNKERR' 'ä AND THE SAME SHAPE.' '¸(ë/RAôRB)/LENERR' '¸       ø
+ 0' 'RNKERR:''PROCEDURE RANK ERROR''' '¸' 'LENERR:''PROCEDURE LENGTH ERR       ø
+ OR''' '¸' 'ä SEE WHICH ARRAY MUST BE EXPANDED.' 'EXP:¸((NAô1)ë(NA=1)^(N       ø
+ B=1)^(æRA)>æRB)/EXB' 'ä EXPAND A' '¸0,æA½RBæA' 'ä EXPAND B' 'EXB:B½RAæB       ø
+X'                                                                             ø
+ FFRCLEAR FX 'FRCLEAR;I' 'ä EXPUNGES THE VARIABLES DESCRIBING THE CURRE       ø
+ NT' 'ä FINITE RING.' 'I½(EX ''FRPLUS''),(EX ''FRTIMES''),(EX ''FRNEG       ø
+X''),EX ''FRINV'''                                                            ø
+ FFRDET FX 'D½FRDET A;IO;M;N;K;SIGN;X;NX;S;T;SGN;CFR;U' 'ä COMPUTES TH       ø
+ E DETERMINANT OF A MATRIX OVER THE FINITE RING,' 'ä WHICH MUST BE COMMU       ø
+ TATIVE.' 'IO½0' 'DERR^/(FRTEST A),(2=ææA),=/æA' 'DERR^/,FRTIMES=íFRTIM       ø
+ ES' 'T½(2*N½1ÆæA)æ3-3' 'CFR½æFRNEG' 'M½A[K½0;]' 'SIGN½1' 'NX½+/2*X½(N,1       ø
+ )æìN' 'LOOP:¸(NóK½K+1)/END' 'T[NX]½ìæNX' 'NX½+/2*X½(K+1)SSUB N' 'S½T[(í       ø
+ ((K+1),æNX)æNX)-2*X]' 'SIGN½-SIGN' 'U½(,FRTIMES)[A[K;X]+M[S]õCFR]' 'M½(       ø
+ ý1ÇæU)æ0' 'X½0=ìý1ÆæU' 'SGN½SIGN' 'LOOP2:¸(SGN=ý1)/NEG' 'M½(,FRPLUS)[((       ø
+ æM)æX/U)+MõCFR]' '¸INCR' 'NEG:M½(,FRPLUS)[FRNEG[(æM)æX/U]+MõCFR]' 'INCR       ø
+X:SGN½-SGN' '¸(~1ÆX½ý1èX)/LOOP2' '¸LOOP' 'END:D½+/M'                           ø
+ FFRTEST FX 'T½FRTEST A' 'ä CHECKS WHETHER  A  REPRESENTS AN ARRAY OVER       ø
+X THE CURRENT' 'ä FINITE RING.' 'T½^/(,A=¾A),(,A<æFRNEG),,0óA'                 ø
+ FFRDIFF FX 'C½A FRDIFF B;IO' 'ä COMPUTES THE DIFFERENCE OF TWO ARRAYS       ø
+  OVER THE FINITE' 'ä RING.' 'IO½0' '¸NOTEST/BEGIN' 'DERR(FRTEST A)^FRT       ø
+XEST B' 'EXPAND' 'BEGIN:C½(,FRPLUS)[FRNEG[B]+Aõ1ÆæFRPLUS]'                     ø
+ FFRINIT FX 'A FRINIT B;IO;C;U' 'ä INITIALIZES THE GLOBAL VARIABLES FO       ø
+ R THE CURRENT FINITE' 'ä RING.  A  IS THE ADDITION TABLE AND  B  IS THE       ø
+ ' 'ä MULTIPLICATION TABLE.' 'FRPLUS½A' 'FRTIMES½B' 'FRNEG½SFEL A=IO½0'       ø
+X 'U½FRINV/ìæFRINV½(ë/íC)^ë/C½B=1' 'FRINV[U]½SFEL C[U;]'                       ø
+ FFRMATPROD FX 'C½A FRMATPROD B;M;RHO;RR;X;AX;BX;IO;RA;RB' 'ä COMPUTES       ø
+  THE MATRIX PRODUCT OF TWO NONSCALAR ARRAYS' 'ä OVER THE FINITE RING.'        ø
+ 'IO½0' 'DERR(FRTEST A)^(FRTEST B)^(^/0<(ææA),ææB)^(ý1ÆæA)=1ÆæB' 'RHO½(       ø
+ RA½ý1ÇæA),RB½1ÇæB' 'RR½((æRA)+ìæRB),ìæRA' 'C½RHOæ0' 'M½1ÆæFRTIMES' 'X½(       ø
+ 1ÆæB)Æ1' 'LOOP:AX½RRí(RB,RA)æX/A' 'BX½RHOæXðB' 'C½(,FRPLUS)[(,FRTIMES)[       ø
+XBX+AXõM]+CõM]' '¸(~1ÆX½ý1èX)/LOOP'                                            ø
+ FFRPOWER FX 'C½A FRPOWER B;RHO;I;J;IO;M' 'ä COMPUTES THE B-TH POWER O       ø
+ F  A  IN THE FINITE RING' 'ä USING THE BINARY POWER ALGORITHM.' 'IO½0'       ø
+  'DERR(FRTEST A)^^/,(B=¾B),Bò0' 'EXPAND' 'RHO½æA' 'C½(æA½,A)æ1' 'I½(B>0       ø
+ )/ìæB½,B' 'M½1ÆæFRTIMES' 'LOOP:C[J]½(,FRTIMES)[A[J]+MõC[J½(2|B[I])/I]]'       ø
+  '¸(0=æI½(B[I]ò2)/I)/END' 'A[I]½(,FRTIMES)[A[I]õM+1]' 'B[I]½¾B[I]ö2' '¸       ø
+XLOOP' 'END:C½RHOæC'                                                           ø
+ FFRPROD FX 'C½A FRPROD B;IO' 'ä COMPUTES THE PRODUCT OF TWO ARRAYS OV       ø
+ ER THE FINITE RING.' 'IO½0' '¸NOTEST/BEGIN' 'DERR(FRTEST A)^FRTEST B'        ø
+X'EXPAND' 'BEGIN:C½(,FRTIMES)[B+Aõ1ÆæFRTIMES]'                                 ø
+ FFRSUM FX 'C½A FRSUM B;IO' 'ä COMPUTES THE SUM OF TWO ARRAYS OVER THE       ø
+  FINITE RING.' 'IO½0' '¸NOTEST/BEGIN' 'DERR(FRTEST A)^FRTEST B' 'EXPAN       ø
+XD' 'BEGIN:C½(,FRPLUS)[B+Aõ1ÆæFRPLUS]'                                         ø
+ FFRXDEGREE FX 'B½FRXDEGREE A' 'ä COMPUTES THE ARRAY OF DEGREES OF AN A       ø
+ RRAY OF POLYNOMIALS' 'ä OVER THE FINITE RING.' 'DERR FRTEST A' 'B½ZXDEG       ø
+XREE A'                                                                        ø
+ FFRXDIFF FX 'C½A FRXDIFF B' 'ä COMPUTES THE DIFFERENCE OF TWO ARRAYS O       ø
+XF POLYNOMIALS' 'ä OVER THE FINITE RING.' 'C½A FRXSUM FRNEG[B]'                ø
+ FFRXSUM FX 'C½A FRXSUM B;M;D' 'ä COMPUTES THE SUM OF TWO ARRAYS OF POL       ø
+ YNOMIALS OVER' 'ä THE FINITE RING.' 'EXPANDV' 'M½(æA)©æB' 'C½(MÆA)FRSUM       ø
+X MÆB' 'D½1©+/ë\èëð((õ/ý1ÇæC),ý1ÆæC)æCô0' 'C½((ý1ÇæC),D)ÆC'                    ø
+ FFRXEVAL FX 'Y½A FRXEVAL B;I;IO;RHO;M' 'ä EVALUTES THE POLYNOMIALS IN       ø
+   A  AT  B  IN THE' 'ä FINITE RING.  COMMUTATIVITY OF THE RING IS NOT C       ø
+ HECKED.' 'DERR(FRTEST A)^FRTEST B½((æB),1)æB' 'EXPANDV' 'A½((õ/RHO½ý1Çæ       ø
+ A),ý1ÆæA)æA' 'Y½(æB½,B)æIO½0' 'M½1ÆæFRPLUS' 'I½(æA)[1]' 'LOOP:¸(0>I½I-       ø
+X1)/END' 'Y½(,FRPLUS)[(,FRTIMES)[B+MõY]+MõA[;I]]' '¸LOOP' 'END:Y½RHOæY'        ø
+ FFRXLEAD FX 'C½FRXLEAD A;EPSILON' 'ä COMPUTES THE LEADING COEFFICIENTS       ø
+  OF AN ARRAY OF' 'ä POLYNOMIALS OVER THE CURRENT FINITE RING.' 'DERR FR       ø
+XTEST A' 'EPSILON½0' 'C½RXLEAD A'                                              ø
+ FFRXPROD FX 'C½A FRXPROD B;IO;D;RHO;I' 'ä COMPUTES THE ENTRY-BY-ENTRY       ø
+  PRODUCT OF TWO ARRAYS' 'ä OF POLYNOMIALS OVER THE FINITE RING.' 'EXPAN       ø
+ DV' 'IO½0' 'D½((ìý1+ææA),0 ý1+ææA)íBø.õ(ý1ÆæA)æ1' 'D½(Aø.õ(ý1ÆæB)æ1)FR       ø
+ PROD D' 'D½D,((æA),ý1+ý1ÆæA)æ0' 'D½((æA)æ-ìý1ÆæA)èD' 'RHO½æD' 'D½((õ/ý2       ø
+ ÇRHO),ý2ÆRHO)æD' 'C½(æD)[0 2]æ0' 'I½ý1' 'LOOP:¸((æD)[1]=I½I+1)/END' 'C½       ø
+ C FRSUM D[;I;]' '¸LOOP' 'END:D½1©+/ë\èëð0ôC' 'C½((ý2ÇRHO),D)æ((1ÆæC),D)       ø
+XÆC'                                                                           ø
+ FGAUSSFACTOR FX 'C½GAUSSFACTOR A;IO;P;I;J;U;Q;NOTEST' 'ä PRODUCES A L       ø
+ IST OF GAUSSIAN PRIMES WHOSE PRODUCT' 'ä IS AN ASSOCIATE OF THE NONZERO       ø
+  GAUSSIAN INTEGER  A.' 'ä NO RATIONAL PRIME IN THE NORM OF  A  MAY BE'        ø
+ 'ä LARGER THAN 10000.' 'DERR^/(,A=¾A),(1òææA),(ë/,Aô0),(õ/æA)î1 2' 'C½0       ø
+  2æ0' 'IO½1' '¸(0=æP½SSORT ZFACTOR A+.õA½2ÆA)/0' 'DERR 10000>ý1ÆP' 'Q½       ø
+ ((2=P[1]),2)æ1 1' 'Q½Q,[1]((3=4|P)/P),[1.5]0' 'NOTEST½1' '¸(0=æP½(1=4|P       ø
+ )/P)/LOOP' 'I½SFEL U=¾U½(0©Pø.-(ì¾(ý1ÆP)*0.5)*2)*0.5' 'Q½Q,[1]í(I,I),[0       ø
+ .5]J,-J½¾(P-IõI)*0.5' 'LOOP:¸(0=æQ½(^/0=Q GAUSSREM(æQ)æA)ðQ)/END' 'C½C,       ø
+X[1]Q' 'A½¾A CQUOT CPRODRED Q' '¸LOOP' 'END:C½C[ûC[;2];]' 'C½C[û+/C*2;]'       ø
+ FGAUSSREM FX 'C½A GAUSSREM B;EPSILON' 'ä COMPUTES ONE REMAINDER OF  B        ø
+  DIVIDED BY  A  IN THE' 'ä EUCLIDEAN DOMAIN OF GAUSSIAN INTEGERS.' 'EPS       ø
+XILON½0' 'C½B CDIFF A CPROD B GAUSSQUOT A'                                     ø
+ FGAUSSQUOT FX 'C½A GAUSSQUOT B;EPSILON' 'ä COMPUTES ONE QUOTIENT OF  A       ø
+   BY  B  IN THE' 'ä EUCLIDEAN DOMAIN OF GAUSSIAN INTEGERS.' 'EPSILON½0'       ø
+X 'C½¾0.5+A CQUOT B'                                                           ø
+ FGPALLORB FX 'B½GPALLORB A;N;x;I;NOTEST;C' 'ä COMPUTES A SUMMARY OF TH       ø
+ E ORBITS OF THE PERMUTATION' 'ä GROUP GENERATED BY THE ROWS OF THE MATR       ø
+ IX  A.' 'ä THE FIRST ROW OF  B  GIVES THE LENGTHS OF THE ORBITS.' 'ä TH       ø
+ E SECOND ROW OF  B  GIVES REPRESENTATIVES.' 'ä q[I]  IS THE FIRST POINT       ø
+  IN THE ORBIT CONTAINING  I.' 'DERR(GPTEST A)^2=ææA' 'q½(N½ý1ÆæA)æý1' '       ø
+ B½2 0æ0' 'NOTEST½1' 'LOOP:¸((N+IO)óI½qìý1)/0' 'q[C½A GPORBIT I]½I' 'B½       ø
+XB,I,æC' '¸LOOP'                                                               ø
+ FGPTEST FX 'T½GPTEST A;M;N;Z' 'ä CHECKS THAT  A  IS AN ARRAY OF PERMUT       ø
+ ATIONS.' '¸(~T½^/(1óææA),,A=¾A)/0' '¸(~T½(^/,AòIO)^^/A<IO+N½ý1ÆæA)/0'       ø
+X 'Z½(õ/æA)æ0' 'Z[(,A)+,í(N,M)æNõ(ìM½õ/ý1ÇæA)-IO]½1' 'T½^/Z'                  ø
+ FGPORBIT FX 'C½A GPORBIT I;V' 'ä COMPUTES A LIST  C  AND THE CHARACTER       ø
+ ISTIC VECTOR  x' 'ä OF THE ORBIT CONTAINING  I  OF THE PERMUATION GROUP       ø
+ ' 'ä GENERATED BY THE ROWS OF THE MATRIX  A.' 'DERR(1=æI)^(2=ææA)^(^/I=       ø
+ ¾I½,I)^GPTEST A' 'x½(ý1ÆæA)æ0' 'x[C½V½I]½1' 'LOOP:C½C,V½SSORT(~x[V])/V½       ø
+X,A[;V]' 'x[V]½1' '¸(0ôæV)/LOOP' 'C½SSORT C'                                   ø
+ FGPCYCIN FX 'X½N GPCYCIN C;Y;I;D;U' 'ä CONSTRUCTS THE VECTOR FORM OF T       ø
+ HE PERMUTATION OF  ìN' 'ä GIVEN AS A PRODUCT OF CYCLES IN THE CHARACTER       ø
+  VECTOR  C.' 'ä THE CYCLES DO NOT NEED TO BE DISJOINT.  ORIGIN DEPENDEN       ø
+ T.' 'DERR(1=æN)^N=¾N½,N' 'X½ìN' 'C½(Cô'' '')/C½,C' 'ä GET THE NEXT CYCL       ø
+ E.' 'LOOP:¸(0=æC)/0' 'D½(I½(Cì'')'')+1-IO)ÆC' 'C½IÇC' 'DERR(''(''=1ÆD)       ø
+ ^'')''=ý1ÆD' 'D½ý1Ç1ÇD' 'D[(D='','')/ìæD]½'' ''' 'DERR^/Dî''0123456789        ø
+ ''' 'DERR(æU)=æSSORT U½,¯D' 'DERR^/U<N+IO' 'Y½ìN' 'Y[U]½1èU' 'X½Y[X]'        ø
+X'¸LOOP'                                                                       ø
+ FGPCYCOUT FX 'C½GPCYCOUT X;T;I;J' 'ä CONSTRUCTS THE CYCLE FORM OF THE        ø
+ PERMUTATION  X.' 'DERR 1=ææX' 'DERR^/X[ûX]=ìæX' 'C½''''' 'T½(æX)æ0' 'ä        ø
+ FIND THE START OF THE NEXT CYCLE.' 'LOOP1:¸((IO+æX)óI½Tì0)/0' 'T[I]½1'       ø
+  'C½C,''('',®J½I' 'LOOP2:¸(I=J½X[J])/CLOSE' 'C½C,'','',®J' 'T[J]½1' '¸L       ø
+XOOP2' 'CLOSE:C½C,'')''' '¸LOOP1'                                              ø
+ FGPINV FX 'C½GPINV A;N;L;M' 'ä COMPUTES THE INVERSES OF THE PERMUTATIO       ø
+ NS IN A.' '¸NOTEST/BEGIN' 'DERR GPTEST A' 'BEGIN:C½(N½õ/æA)æ2' 'L½¾NöM½       ø
+Xý1ÆæA' 'C[(,A)+,í(M,L)æMõ(ìL)-IO]½NæìM' 'C½(æA)æC'                           ø
+ FGPPROD FX 'C½A GPPROD B;M;RHO;N;I' 'ä COMPUTES THE ELEMENT-BY-ELEMENT       ø
+  PRODUCT OF TWO' 'ä ARRAYS OF PERMUTATIONS (OR MAPS).' '¸NOTEST/BEGIN'        ø
+ 'DERR^/(,A=¾A),(,AòIO),,A<IO+ý1ÆæB' 'EXPANDV' 'BEGIN:M½õ/ý1ÇRHO½æA' '       ø
+XN½ý1ÆRHO' 'I½RHOæí(N,M)æNõ(ìM)-IO' 'C½(,B)[A+I]'                             ø
+ FGPSGN FX 'B½GPSGN A;C;D;N' 'ä COMPUTES THE SIGNS OF THE PERMUTATIONS        ø
+ IN  A.' '¸NOTEST/BEGIN' 'DERR GPTEST A' 'BEGIN:D½((ìý2+ææC),IO+(ææC)-1       ø
+X 2)íC½Aø.õ(N½ý1ÆæA)æ1' 'B½ý1*+/+/(C>D)^(æC)æ(ìN)ø.<ìN'                        ø
+ FGPSGP FX 'H½GPSGP X;N;HP;V;VP' 'ä COMPUTES THE PERMUTATION GROUP GENE       ø
+ RATED BY THE' 'ä ROWS OF THE MATRIX  X.  VALID FOR DEGREES AT MOST 12.'       ø
+  'ä WORKSPACE FULL ERRORS ARE LIKELY FOR DEGREES OVER 7.' 'DERR(GPTEST        ø
+ X)^(2=ææX)^12òý1ÆæX' 'N½ý1ÆæX' 'H½(NæN+1)˜HP½SSORT(N+1)(ìN),V½X½íX' 'L       ø
+ OOP:HP½HP,VP½SSORT(~VPîHP)/VP½,(N+1)X[V;]' 'H½H,V½(NæN+1)˜VP' '¸(0ôæVP       ø
+X)/LOOP' 'H½íH'                                                                ø
+ FGPSYMG FX 'T½GPSYMG N;V' 'ä LISTS THE ELEMENTS OF THE SYMMETRIC GROUP       ø
+  ON  ìN.' 'DERR^/(0óN½''''æN),(N=¾N),1=æN½,N' '¸(N>0)/GENERAL' 'T½1 0æ0       ø
+ ' '¸0' 'GENERAL:T½((!N),N-1)æGPSYMG N-1' 'V½,í((!N-1),N)æ(ìN)-IO' 'T½V       ø
+Xè((-V)èT),N+IO-1'                                                            ø
+ FGTCHECK FX 'T½GTCHECK G;IO;E;N;M;I;GTABLE;GTIO;GTINV' 'ä CHECKS WHET       ø
+ HER  G  IS A GROUP TABLE WITH IDENTITY' 'ä EQUAL TO THE INDEX ORIGIN.'        ø
+ 'ä IS  G  A SQUARE INTEGER MATRIX?' '¸(ë/(2ôææG),(ô/æG),,Gô¾G)/NO' 'ä T       ø
+ HE ORIGIN SHOULD BE SET EQUAL TO  ¾/,G' '¸(^/0 1ôE½¾/,G)/NO' 'GTIO½IO½       ø
+ E' 'ä CHECK CLOSURE.' '¸(ë/,G>M½ý1+IO+N½1ÆæG)/NO' 'ä ANY BINARY OPERAT       ø
+ ION ON  ì1  IS A GROUP.' '¸(N=1)/YES' 'ä CHECK FOR TWO-SIDED IDENTITY.'       ø
+  '¸(ë/(G[IO;]ôìN),G[;IO]ôìN)/NO' 'ä COPY  G  INTO  GTABLE FOR USE IN        ø
+  GTSGP  AND' 'ä SET  G  TO 1 TO SAVE SPACE.' 'GTINIT G' 'G½1' 'ä TRY TO       ø
+  FIND A GENERATING SET  U  WITH  Nò2*æU.' 'U½ì0' 'X½IO=ìN' 'LOOP1:¸(M<       ø
+ I½Xì0)/TEST' '¸(N<2*æU½U,I)/NO' 'X[GTSGP U]½1' '¸LOOP1' 'ä MAKE SURE EL       ø
+ EMENTS OF  U  HAVE LEFT INVERSES.' 'TEST:¸(~^/ëðGTABLE[;U]=IO)/NO' 'ä        ø
+ CHECK ASSOCIATIVITY FOR TRIPLES WITH THIRD' 'ä ELEMENT IN  U.' 'I½IO-1       ø
+ ' 'LOOP2:¸((IO+æU)óI½I+1)/YES' '¸(ë/GTABLE[GTABLE;U[I]]ôGTABLE[;GTABLE       ø
+X[;U[I]]])/NO' '¸LOOP2' 'NO:¸T½0' 'YES:T½1'                                    ø
+ FGTINIT FX 'GTINIT A;IO' 'ä INITIALIZES THE CURRENT ABSTRACT GROUP.'        ø
+X'GTABLE½A' 'IO½GTIO½¾/A[IO½1;]' 'GTINV½SFEL A=IO'                          ø
+ FGTSGP FX 'B½GTSGP A;IO;V' 'ä COMPUTES THE SUBGROUP GENERATED BY  A         ø
+ IN THE' 'ä CURRENT ABSTRACT GROUP.' 'IO½GTIO' 'DERR GTTEST A' 'B½SSORT       ø
+  IO,V½,A' 'LOOP:B½B,V½SSORT(~VîB)/V½,GTABLE[V;A]' '¸(0ôæV)/LOOP' 'B½B[       ø
+XûB]'                                                                          ø
+ FGTTEST FX 'T½GTTEST A' 'ä CHECKS WHETHER  A  REPRESENTS AN ARRAY OVER       ø
+ ' 'ä THE CURRENT ABSTRACT GROUP.' '¸(~T½^/,A=¾A)/0' 'T½(^/,AòGTIO)^^/,A       ø
+X<GTIO+æGTINV'                                                                 ø
+ FGTCLEAR FX 'GTCLEAR;I' 'ä EXPUNGES THE VARIABLES DESCRIBING THE CURRE       ø
+ NT' 'ä ABSTRACT GROUP.' 'I½(EX ''GTABLE''),(EX ''GTIO''),EX ''GTINV'       ø
+X''                                                                            ø
+ FGTLCON FX 'B½GTLCON A;IO;X' 'ä COMPUTES THE CHARACTERISTIC MATRIX FO       ø
+ R LEFT CONGRUENCE' 'ä MODULO THE SUBGOUP OF THE CURRENT ABSTRACT' 'ä GR       ø
+ OUP LISTED IN  A.' 'IO½GTIO' 'DERR(1óæA)^GTTEST A½,A' 'X½(æGTINV)æ0' '       ø
+XX[A]½1' 'DERR^/,X[GTABLE[A;A]]' 'B½X[GTABLE[GTINV;]]'                         ø
+ FGTPROD FX 'C½A GTPROD B;IO' 'ä COMPUTES ENTRY-BY-ENTRY PRODUCTS IN T       ø
+ HE CURRENT' 'ä ABSTRACT GROUP.' 'IO½GTIO' '¸NOTEST/BEGIN' 'DERR(GTTEST       ø
+X A)^GTTEST B' 'EXPAND' 'BEGIN:C½(,GTABLE)[B+(A-IO)õæGTINV]'                  ø
+ FGTRCON FX 'B½GTRCON A;IO;X' 'ä COMPUTES THE CHARACTERISTIC MATRIX FO       ø
+ R RIGHT CONGRUENCE' 'ä MODULO THE SUBGROUP OF THE CURRENT ABSTRACT' 'ä        ø
+ GROUP LISTED IN  A.' 'IO½GTIO' 'DERR(1óæA)^GTTEST A½,A' 'X½(æGTINV)æ0'       ø
+X 'X[A]½1' 'DERR^/,X[GTABLE[A;A]]' 'B½X[GTABLE[;GTINV]]'                       ø
+ FMPZDET FX 'D½MPZDET A;IO;E;N;n;F;G;P;I;q;N2' 'ä MULTIPLE PRECISION D       ø
+ ETERMINANT OF A SINGLE PRECISION' 'ä INTEGER MATRIX A LA CABAY AND LAM.       ø
+ ' 'DERR^/(2=ææA),(=/æA),,A=¾A' 'IO½1' 'E½(µ2)++/µ(+/AõA)*0.5' 'DERR(æB       ø
+ IGPRIMES)òN½©EöµBIGPRIMES[1]' 'N2½¾0.5õn½BIGPRIMES[1]' 'D½,(n|N2+ZNDET        ø
+ A)-N2' 'P½,1' 'I½1' 'LOOP:¸(N<I½I+1)/END' 'N2½¾0.5õn½BIGPRIMES[I]' 'F½Z       ø
+ NDET A' 'G½(n|N2+BIGINV[I]õF-1000000(,n)MPZREM0 D)-N2' 'P½P MPZPROD0,B       ø
+XIGPRIMES[I-1]' 'D½D MPZSUM0 P MPZPROD0,G' '¸LOOP' 'END:D½MPZFORM D'           ø
+ FMPZREM0 FX 'C½A MPZREM0 B;IO;I;L;M;N;Q;R;SA;SC;T' 'ä COMPUTES MULTIP       ø
+ LE PRECISION REMAINDER USING VECTORS' 'ä OF DIGITS TO THE BASE 1E6.  TH       ø
+ E QUOTIENT IS SAVED' 'ä IN THE GLOBAL VARIABLE  q.' 'q½,IO½0' 'C½MPZNR       ø
+ MLZ B' '¸(0=SA½õ1ÆA½MPZNRMLZ A)/0' 'A½|A' 'LOOP:¸(((æC)<æA)^0>SC½õ1ÆC)/       ø
+ NEG' '¸((æC)>æA)/DIVIDE' '¸(0>SC)/DIVIDE' '¸((æC)<æA)/0' '¸((æA)=I½(AôC       ø
+ )ì1)/DIVIDE' '¸(A[I]>C[I])/0' 'DIVIDE:N½¾10µQ½(1000000|(M½3¾æC)ÆC)ö100       ø
+ 0000(L½3¾æA)ÆA' '¸(12>T½N+6õ((æC)-M)-(æA)-L)/SMALL' 'Q½¾Qõ10*T-N+6õR½ý       ø
+ 2+¾Tö6' 'Q½(SAõSCõ,(3æ1000000)˜Q),Ræ0' '¸ADJUST' 'SMALL:Q½¾SAõSCõQõ10*T       ø
+ -N' 'Q½(õQ)õ((1+¾10µ|Q)æ1000000)˜|Q' 'ADJUST:q½q MPZSUM0 Q' 'C½C MPZSUM       ø
+X0(-SA)õQ MPZPROD0 A' '¸LOOP' 'NEG:C½C MPZSUM0 A' 'q½q MPZSUM0-SA'             ø
+ FMPZPROD0 FX 'C½A MPZPROD0 B;IO;U' 'ä COMPUTES THE PRODUCT OF TWO VEC       ø
+ TORS OF DIGITS TO' 'ä THE BASE 1E6.' 'IO½0' 'U½(A½,A)ø.õ,B' 'C½MPZNRML       ø
+XZ+ð(-ìæA)èU,(0 ý1+2ææA)æ0'                                                    ø
+ FMPZSUM0 FX 'C½A MPZSUM0 B;M' 'ä ADDS VECTORS OF DIGITS TO BASE 1E6.'        ø
+X'M½-(æA½,A)©æB½,B' 'C½MPZNRMLZ(MÆA)+MÆB'                                      ø
+ FMPZFORM FX 'X½MPZFORM A' 'ä CONVERTS A VECTOR OF DIGITS TO THE BASE 1       ø
+ E6 TO' 'ä A VECTOR OF CHARACTERS.' 'X½,((æA),ý6)Æ®((æA),1)æ¾|A½,A' 'X[(       ø
+XX='' '')/ìæX]½''0''' 'X½((ý1=õ1ÆA)æ''ý''),(((''0''ôý1ÇX)ì1)-IO)ÇX'           ø
+ FMPZNRMLZ FX 'B½MPZNRMLZ A;SIGN;S' 'ä NORMALIZES A VECTOR OF DIGITS TO       ø
+  THE BASE 1E6.' 'DERR^/(1òææA),B=¾B½,A' 'SIGN½1' 'LOOP:¸(0=æB½(((Bô0)ì1       ø
+ )-IO)ÇB)/ZERO' 'B½¾BõS½õ1ÆB' 'SIGN½SõSIGN' '¸(^/(B<1000000),Bò0)/END'        ø
+X'B½(S,0)+0,B-1000000õS½¾Bö1000000' '¸LOOP' 'ZERO:¸B½,0' 'END:B½SIGNõB'        ø
+ FMPZDIFF FX 'Z½X MPZDIFF Y' 'ä COMPUTES THE DIFFERENCE OF TWO MULTIPLE       ø
+  PRECISION' 'ä INTEGERS REPRESENTED AS CHARACTER VECTORS.' 'Z½MPZFORM(M       ø
+XPZUNF X)MPZSUM0-MPZUNF Y'                                                     ø
+ FMPZUNF FX 'A½MPZUNF X;IO;M;SIGN' 'ä CONVERTS THE CHARACTER VECTOR OF       ø
+  A MULTIPLE PRECISION' 'ä INTEGER INTO A VECTOR OF DIGITS TO THE BASE 1       ø
+ E6.' 'IO½0' 'M½ë/''+ý''=1ÆX½,X' 'SIGN½1ÆMÆX' 'DERR^/(X½MÇX)î''01234567       ø
+ 89''' 'A½,¯((7õM)æ0 1 1 1 1 1 1)\(ý6õM½©(æX)ö6)ÆX' 'A½(ý1*SIGN=''ý'')õA       ø
+X'                                                                             ø
+ FMPZGCD FX 'Z½X MPZGCD Y' 'ä COMPUTES THE GCD OF TWO INTEGERS GIVEN BY       ø
+ ' 'ä CHARACTER VECTORS OF DIGITS TO THE BASE 10.' 'Z½MPZFORM(MPZUNF X)M       ø
+XPZGCD0 MPZUNF Y'                                                              ø
+ FMPZGCD0 FX 'C½A MPZGCD0 B;q' 'ä COMPUTES THE GCD OF TWO INTEGERS GIVE       ø
+ N' 'ä BY VECTORS OF DIGITS TO THE BASE 1E6.' 'A½|MPZNRMLZ A' 'C½|MPZNRM       ø
+XLZ B' 'LOOP:¸(0=1ÆA)/0' 'B½A MPZREM0 C' 'C½A' 'A½B' '¸LOOP'                   ø
+ FMPZMAG FX 'B½MPZMAG A;N' 'ä COMPUTES THE ABSOLUTE VALUE OF AN INTEGER       ø
+ ' 'ä GIVEN BY A CHARACTER VECTOR OF DIGITS TO' 'ä THE BASE 10.' 'DERR(1       ø
+ òææA)^^/,Aî''0123456789+ý''' '¸(~(1ÆA½,A)î''+ý'')/NOSIGN' 'A½1ÇA' 'NOSI       ø
+XGN:N½+/^\A=''0''' '¸(0<æB½NÇA)/0' 'B½,''0'''                                  ø
+ FMPZMAG0 FX 'B½MPZMAG0 A' 'ä COMPUTES THE MAGNITUDE OF AN INTEGER GIVE       ø
+XN' 'ä BY A VECTOR OF DIGITS TO THE BASE 1E6.' 'B½|MPZNRMLZ A'                 ø
+ FMPZNEG FX 'B½MPZNEG A;IO;I;C' 'ä COMPUTES THE NEGATIVE OF AN INTEGER       ø
+  GIVEN' 'ä BY A CHARACTER VECTOR OF DIGITS TO THE BASE 10.' 'IO½0' 'DE       ø
+ RR(1òææA)^'' ''=1Æ0Æ,A' 'I½(C½1ÆB½,A)î''+ý''' 'B½IÇB' 'DERR^/Bî''012345       ø
+X6789''' 'B½(+/^\''0''=ý1ÇB)ÇB' '¸((C=''ý'')ë''0''=1ÆB)/0' 'B½''ý'',B'         ø
+ FMPZPOWER FX 'Z½X MPZPOWER N' 'ä COMPUTES THE N-TH POWER OF THE MULTIP       ø
+ LE PRECISION' 'ä INTEGER WITH CHARACTER VECTOR  X.  N  IS AN' 'ä ORDINA       ø
+XRY INTEGER.' 'Z½MPZFORM(MPZUNF X)MPZPOWER0 N'                                 ø
+ FMPZPOWER0 FX 'B½A MPZPOWER0 N' 'ä RAISES A VECTOR OF DIGITS TO BASE 1       ø
+ E6 TO' 'ä THE POWER N, WHICH IS AN ORDINARY INTEGER.' 'DERR(N=¾N)^Nò0'        ø
+ 'A½MPZNRMLZ A' 'B½,1' 'LOOP:¸(N=0)/0' '¸(0=2|N)/EVEN' 'B½B MPZPROD0 A'        ø
+X'EVEN:A½A MPZPROD0 A' 'N½¾Nö2' '¸LOOP'                                        ø
+ FMPZPROD FX 'Z½X MPZPROD Y' 'ä MULTIPLE PRECISION PRODUCT OF INTEGERS        ø
+ GIVEN' 'ä BY CHARACTER VECTORS OF DIGITS TO THE BASE 10.' 'Z½MPZFORM(MP       ø
+XZUNF X)MPZPROD0 MPZUNF Y'                                                     ø
+ FMPZREM FX 'Z½X MPZREM Y' 'ä COMPUTES THE REMAINDER WHEN THE MULTIPLE        ø
+ PRECISION' 'ä INTEGER  Y  IS DIVIDED BY THE MULTIPLE PRECISION' 'ä INTE       ø
+ GER  X.  THE INTEGER QUOTIENT IS SAVED IN THE' 'ä GLOBAL VARIABLE  q.         ø
+ HERE  X  AND  Y  ARE' 'ä CHARACTER VECTORS OF DIGITS TO THE BASE 10.' '       ø
+XZ½MPZFORM(MPZUNF X)MPZREM0 MPZUNF Y' 'q½MPZFORM q'                            ø
+ FMPZSGN FX 'T½MPZSGN A' 'ä COMPUTES THE SIGNUM OF A MULTIPLE PRECISION       ø
+  INTEGER' 'ä GIVEN BY A CHARACTER VECTOR OF DIGITS TO THE BASE 10.' 'DE       ø
+ RR^/(1òææA),,Aî''0123456789+ý''' '¸(''ý''ô1ÆA½,A)/NONNEG' 'T½ý1' '¸0' '       ø
+XNONNEG:¸(^/Aî''0+'')/ZERO' 'T½1' '¸0' 'ZERO:T½0'                              ø
+ FMPZSUM FX 'Z½X MPZSUM Y' 'ä COMPUTES THE SUM OF TWO MULTIPLE PRECISIO       ø
+ N INTEGERS' 'ä IN CHARACTER FORM.' 'Z½MPZFORM(MPZUNF X)MPZSUM0 MPZUNF Y       ø
+X'                                                                             ø
+XNNOTEST 0 0                                                                   ø
+ FQNRMLZ FX 'B½QNRMLZ A;D;RHO' 'ä COMPUTES THE STANDARD REPRESENTATION        ø
+ OF AN ARRAY OF' 'ä RATIONAL NUMBERS EXPRESSED AS QUOTIENTS OF INTEGERS.       ø
+ ' 'ä FOR SCALARS AND ARRAYS OF VECTORS OF LENGTH 1 A' 'ä DENOMINATOR OF       ø
+  1 IS ADDED.' '¸NOTEST/BEGIN' 'DERR QTEST A' 'BEGIN:¸((0=ææB)ë1=ý1ÆæB½A       ø
+ )/ADDDEN' 'RHO½ý1ÇæA' 'D½(((RHO,1)ÆA)ZGCD0 D)õõD½(RHO,ý1)ÆA' 'B½¾AöD,D'       ø
+X '¸0' 'ADDDEN:B½A,1'                                                          ø
+ FQTEST FX 'T½QTEST A' 'ä CHECKS WHETHER  A  REPRESENTS AN ARRAY' 'ä OF       ø
+  RATIONAL NUMBERS.' '¸(~T½(^/,A=¾A)^(0=ææA)ë(0<ææA)^ë/1 2=ý1ÆæA)/0' '¸(       ø
+X(0=ææA)ë1=ý1ÆæA)/0' 'T½^/0ô,0 1/A'                                            ø
+ FQDIFF FX 'C½A QDIFF B' 'ä COMPUTES THE DIFFERENCE OF TWO RATIONAL ARR       ø
+XAYS.' 'C½A QSUM QNEG B'                                                       ø
+ FQSUM FX 'C½A QSUM B;RA;RB;AN;AD;BN;BD;NT' 'ä COMPUTES THE SUM OF TWO        ø
+ RATIONAL ARRAYS.' '¸NOTEST/BEGIN' 'A½QNRMLZ A' 'B½QNRMLZ B' 'EXPANDV' '       ø
+ BEGIN:RA½ý1ÇæA' 'RB½ý1ÇæB' 'AN½(RA,1)ÆA' 'AD½(RA,ý1)ÆA' 'BN½(RB,1)ÆB' '       ø
+ BD½(RB,ý1)ÆB' 'NT½NOTEST' 'NOTEST½1' 'C½QNRMLZ((ANõBD)+ADõBN),ADõBD' 'N       ø
+XOTEST½NT'                                                                     ø
+ FQNEG FX 'B½QNEG A' 'ä COMPUTES THE NEGATIVE OF A RATIONAL ARRAY.' '¸N       ø
+XOTEST/BEGIN' 'A½QNRMLZ A' 'BEGIN:B½Aõ(æA)æý1 1'                               ø
+ FQINV FX 'B½QINV A;D' 'ä COMPUTES THE RECIPROCAL OF A RATIONAL ARRAY.'       ø
+  '¸NOTEST/BEGIN' 'A½QNRMLZ A' 'DERR^/0ô,1 0/A' 'BEGIN:B½(èA)õD,D½õ1 0/A       ø
+X'                                                                             ø
+ FQMATPROD FX 'C½A QMATPROD B;IO;X;AX;BX;RR;NOTEST;RA;RB' 'ä COMPUTES        ø
+ THE MATRIX PRODUCT OF TWO NONSCALAR ARRAYS' 'ä OF RATIONAL NUMBERS.' '       ø
+ IO½1' 'NOTEST½0' 'A½QNRMLZ A' 'B½QNRMLZ B' 'DERR^/2ó(ææA),ææB' 'DERR(æA       ø
+ )[ý1+ææA]=1ÆæB' 'C½((RA½ý2ÇæA),(RB½ý1Ç1ÇæB),2)æ0 1' 'X½1=ì1ÆæB' 'RR½((æ       ø
+ RA)+ìæRB),(ìæRA),ææC' 'NOTEST½1' 'LOOP:AX½RRí(RB,RA,2)æX/[ý1+ææA]A' 'BX       ø
+X½(æC)æXðB' 'C½C QSUM AX QPROD BX' '¸(~1ÆX½ý1èX)/LOOP'                         ø
+ FQPROD FX 'C½A QPROD B;NT' 'ä COMPUTES THE PRODUCT OF TWO RATIONAL ARR       ø
+ AYS.' '¸NOTEST/BEGIN' 'A½QNRMLZ A' 'B½QNRMLZ B' 'EXPANDV' 'BEGIN:NT½NOT       ø
+XEST' 'NOTEST½1' 'C½QNRMLZ AõB' 'NOTEST½NT'                                    ø
+ FQPOWER FX 'C½A QPOWER B;RHO;RC;I;J;NOTEST' 'ä COMPUTES THE B-TH POWER       ø
+  OF THE RATIONAL' 'ä ARRAY  A  USING THE BINARY POWER ALGORITHM.' 'NOTE       ø
+ ST½0' 'A½QNRMLZ A' 'DERR^/(,B=¾B),,Bò0' 'B½((æB),1)æB' 'EXPANDV' 'RC½(õ       ø
+ /ý1ÇRHO½æA),2' 'A½RCæA' 'C½RCæ1 1' 'I½(B>0)/ìæB½,B' 'NOTEST½1' 'LOOP:C[       ø
+ J;]½C[J;]QPROD A[J½(2|B[I])/I;]' '¸(0=æI½(B[I]ò2)/I)/END' 'A[I;]½A[I;]Q       ø
+XPROD A[I;]' 'B[I]½¾B[I]ö2' '¸LOOP' 'END:C½RHOæC'                              ø
+ FQQUOT FX 'C½A QQUOT B' 'ä COMPUTES THE QUOTIENT OF TWO RATIONAL ARRAY       ø
+XS.' 'C½A QPROD QINV B'                                                        ø
+ FRXLEAD FX 'C½RXLEAD A;IO;D;RHO;I;R' 'ä COMPUTES THE ARRAY OF LEADING       ø
+  COEFFICIENTS OF AN' 'ä ARRAY OF REAL POLYNOMIALS.' 'IO½0' '¸(0ôææA)/N       ø
+ EXT' 'A½,A' 'NEXT:RHO½ý1ÇæA½Aõ(|A)òEPSILONõ©/,|A' 'D½,ý1++/ë\è0ôA' 'I½(       ø
+XDò0)/ìR½õ/RHO' 'C½Ræ1' 'C[I]½(,A)[D[I]+(ý1ÆæA)õI]' 'C½RHOæC'                  ø
+ FRACLEAR FX 'RACLEAR;I' 'ä EXPUNGES THE ARRAY OF STRUCTURE CONSTANTS F       ø
+XOR' 'ä THE CURRENT R-ALGEBRA.' 'I½EX ''RSC'''                                ø
+ FRADIFF FX 'C½A RADIFF B' 'ä COMPUTES DIFFERENCES IN THE CURRENT R-ALG       ø
+XEBRA.' 'C½A RASUM-B'                                                          ø
+ FRASUM FX 'C½A RASUM B' 'ä COMPUTE SUMS IN THE CURRENT R-ALGEBRA.' 'A½       ø
+XRANRMLZ A' 'B½RANRMLZ B' 'EXPANDV' 'C½A+B'                                    ø
+ FRANRMLZ FX 'C½RANRMLZ A;IO' 'ä RETURNS THE STANDARD REPRESENTATION O       ø
+ F AN ARRAY' 'ä OVER THE THE CURRENT R-ALGEBRA.  SCALARS AND' 'ä VECTORS       ø
+  OF LENGTH 1 ARE PADDED WITH ZEROS.' 'IO½1' 'DERR(0=ææA)ë(1=ý1ÆæA)ë(1Æ       ø
+ æRSC)=ý1ÆæA' 'C½((æA),ì0=ææA)æA' '¸((1ÆæRSC)=ý1ÆæC)/0' 'C½((ý1ÇæC),1ÆæR       ø
+XSC)ÆC'                                                                        ø
+ FRAINIT FX 'RAINIT A' 'ä INITIALIZED THE ARRAY OF STRUCTURE CONSTANTS'       ø
+X 'ä FOR THE CURRENT R-ALGEBRA.' 'DERR^/(3=ææA),(1ÇæA)=ý1ÇæA' 'RSC½A'          ø
+ FRANEG FX 'C½RANEG A' 'ä COMPUTES NEGATIVES IN THE CURRENT R-ALGEBRA.'       ø
+X 'C½RANRMLZ-A'                                                                ø
+ FRAPOWER FX 'C½A RAPOWER B;R;RHO;I;J;M' 'ä COMPUTES THE B-TH POWER OF        ø
+  A  IN THE CURRENT' 'ä R-ALGEBRA.' 'DERR^/(,B=¾B),,Bò0' 'A½RANRMLZ A' '       ø
+ B½((æB),1)æB' 'EXPANDV' 'R½õ/ý1ÇRHO½æA' 'A½(R,M½ý1ÆæA)æA' 'C½(æA)æMÆ1'        ø
+ 'I½(B>0)/ìæB½,B' 'LOOP:C[J;]½C[J;]RAPROD A[J½(2|B[I])/I;]' '¸(0=æI½(B[I       ø
+ ]ò2)/I)/END' 'A[I;]½A[I;]RAPROD A[I;]' 'B[I]½¾B[I]ö2' '¸LOOP' 'END:C½RH       ø
+XOæC'                                                                          ø
+ FRAPROD FX 'C½A RAPROD B;IO;R;RHO;M' 'ä COMPUTES PRODUCTS IN THE CURR       ø
+ ENT R-ALGEBRA.' 'A½RANRMLZ A' 'B½RANRMLZ B' 'EXPANDV' 'R½õ/ý1ÇRHO½æA' '       ø
+ IO½0' 'M½ý1ÆæRSC' 'A½(R,MõM)æ2 0 1í(M,R,M)æA' 'B½(R,MõM)æ1 0 2í(M,R,M)       ø
+XæB' 'C½AõB' 'C½RHOæC+.õ((MõM),M)æRSC'                                         ø
+ FRXDET FX 'D½RXDET A;IO;V;M;X;J;W;Q;R;S;U;DEG;a;NOTEST' 'ä COMPUTES T       ø
+ HE DETERMINANT OF A MATRIX' 'ä OF REAL POLYNOMIALS.' 'DERR(3=ææA)^=/2Ææ       ø
+ A' 'D½,IO½1' '¸(0=1ÆæA)/0' 'A½Aõ(|A)òEPSILONõ©/,|A' 'NOTEST½1' 'LOOP:¸       ø
+ (1=1ÆæA)/END' 'BACK:¸(^/ý1=DEG½RXDEGREE V½A[;1;])/ZERO' 'M½¾/(DEG>ý1)/D       ø
+ EG' 'X½(M=DEG)/ìæDEG' 'J½X[(|V[X;M+1])ì©/|V[X;M+1]]' '¸(J=1)/OK' 'A[1,J       ø
+ ;;]½A[J,1;;]' 'D½-D' 'OK:¸(^/,0=W½1 0ÇA[;1;])/ENDLP' 'Q½(-1 0+æU)ÆU½W R       ø
+ XQUOT A[1;1;]' 'R½TRAV((2ÆæA),ý1ÆæQ)æQ' 'S½(æA)æA[1;;]' 'A½A RXDIFF R R       ø
+ XPROD S' '¸BACK' 'ENDLP:D½D RXPROD A[1;1;]' 'A½1 1 0ÇA' '¸LOOP' 'ZERO:D       ø
+X½,0' '¸0' 'END:D½D RXPROD A[1;1;]'                                            ø
+ FRXDEGREE FX 'B½RXDEGREE A' 'ä COMPUTES THE ARRAY OF DEGREES OF AN ARR       ø
+ AY OF' 'ä REAL POLYNOMIALS.' '¸(0<ææA)/BEGIN' 'A½,A' 'BEGIN:B½ý1++/ë\è0       ø
+XôAõ(|A)òEPSILONõ©/,|A'                                                        ø
+ FRXQUOT FX 'C½A RXQUOT B;IO;DB;N;K;L;R;I;F;D;E;RHO' 'ä COMPUTES QUOTI       ø
+ ENTS IN THE EUCLIDEAN DOMAIN' 'ä OF REAL POLYNOMIALS.  THE REMAINDER IS       ø
+  SAVED' 'ä IN THE GLOBAL VARIABLE  a.' 'IO½0' 'EXPANDV' 'DERR^/,0óDB½R       ø
+ XDEGREE B' 'N½õ/RHO½æDB' 'L½K©(+/ý1ÆæA)+©/R½(ý1+K½+/ý1ÆæB)-,DB' 'B½(-R)       ø
+ è(N,K)æB' 'A½(-R)è(N,L)Æ(N,ý1ÆæA)æA' 'C½(N,I½1++/L-K)æ2-2' 'E½öB[;K-1]'       ø
+  'LOOP:¸(0>I½I-1)/END' 'C[;I]½F½A[;I+K-1]õE' 'A[;I+ìK]½A[;I+ìK]-Bõí(èæB       ø
+ )æF' '¸LOOP' 'END:C½Cõ(|C)òEPSILONõ©/,|C' 'D½1©+/ë\èëðCô0' 'C½(RHO,D)æ(       ø
+ N,D)ÆC' 'A½Aõ(|A)òEPSILONõ©/(,|A),,|B' 'D½1©+/ë\èëð0ôA½RèA' 'a½(RHO,D)æ       ø
+X(N,D)ÆA'                                                                      ø
+ FRXDIFF FX 'C½A RXDIFF B' 'ä COMPUTES THE DIFFERENCE OF TWO ARRAYS OF        ø
+XREAL POLYNOMIALS.' 'C½A RXSUM-B'                                              ø
+ FRXPROD FX 'C½A RXPROD B;IO;D' 'ä COMPUTES THE ENTRY-BY-ENTRY PRODUCT       ø
+  OF TWO ARRAYS' 'ä OF REAL POLYNOMIALS.' '¸NOTEST/BEGIN' 'EXPANDV' 'BEG       ø
+ IN:IO½0' 'C½(Aø.õ(ý1ÆæB)æ1)õ((ìý1+ææA),0 ý1+ææA)íBø.õ(ý1ÆæA)æ1' 'C½C,(       ø
+ (æA),ý1+ý1ÆæA)æ0' 'C½+/[ý2+ææC]((æA)æ-ìý1ÆæA)èC' 'C½Cõ(|C)òEPSILONõ©/,|       ø
+XC' 'D½1©©/,+/ë\èCô0' 'C½((ý1ÇæC),D)ÆC'                                        ø
+ FRXSUM FX 'C½A RXSUM B;M;D' 'ä COMPUTES THE SUM OF TWO ARRAYS OF REAL        ø
+ POLYNOMIALS.' '¸NOTEST/BEGIN' 'EXPANDV' 'BEGIN:M½(æA)©æB' 'C½(MÆA)+MÆB'       ø
+X 'C½Cõ(|C)òEPSILONõ©/,|C' 'D½1©©/,+/ë\è0ôC' 'C½((ý1ÇæC),D)ÆC'                 ø
+ FRXEVAL FX 'Y½A RXEVAL B;IO' 'ä EVALUATES THE REAL POLYNOMIALS IN  A        ø
+  AT  B.' 'IO½0' 'B½((æB),1)æB' 'EXPANDV' 'B½(ý1ÇæB)æB' 'Y½+/AõBø.*ìý1Æ       ø
+XæA' 'Y½Yõ(|Y)òEPSILONõ©/,|Y'                                                  ø
+ FRXFACTOR FX 'G½RXFACTOR F;IO;D;TOL;N;GCD;DF;r;s;H;S;ADDH;CENT;DEL;DE       ø
+ R;DH;DR;MAX;NEWR;a;A;CLOSE;CNT;I;ND;SQ;S2;U;VAL;X' 'ä ATTEMPTS TO PRODU       ø
+ CE A LIST OF MONIC REAL' 'ä IRREDUCIBLE POLYNOMIALS WHOSE PRODUCT IS TH       ø
+ E' 'ä MONIC ASSOCIATE OF A GIVEN POLYNOMIAL.' 'IO½0' 'DERR^/(1=ææF),,0       ø
+ <D½RXDEGREE F' 'TOL½EPSILONõ©/,|F½((D+1)ÆF)öF[D]' 'SQ½4 2æ1 1 ý1 1 ý1 ý       ø
+ 1 1 ý1' 'N½+/^\0=F' 'G½(N,3)æ0 1 0' 'AGAIN:GCD½F RXGCD DF½1ÇFõìæF½NÇF'        ø
+ 'DERR^/TOLò|GCD RXDIFF(F RXPROD r)RXSUM DF RXPROD s' '¸(2<D½æH½F RXQUOT       ø
+  GCD)/NONLIN' 'CENT½1 2æ2Æ-H[0]öH[1]' '¸CLEANUP' 'NONLIN:CENT½(2 2ÆSQ)õ       ø
+ S½0.5õ©/(èDõ|ý1ÇH)*ö1ÇìD' 'ADDH½|1ÇDHõìæDH½1ÇHõìæH' 'DH½DH,0' 'CLOSE½CN       ø
+ T½0' 'LOOP:¸(15<CNT½CNT+1)/CLEANUP' 'DER½VAL½(æCENT)æ0' 'I½D' 'EVAL:¸(0       ø
+ >I½I-1)/DONE' 'VAL½((æVAL)æH[I],0)+(-/CENTõVAL),[0.5]+/CENTõèVAL' 'DER½       ø
+ ((æDER)æDH[I],0)+(-/CENTõDER),[0.5]+/CENTõèDER' '¸EVAL' 'DONE:X½~TOLòDR       ø
+ ½(ND½+/DERõDER)*0.5' 'DEL½(XðDERõ(æDER)æ1 ý1)öND,[0.5]ND½X/ND' 'DEL½(-/       ø
+ VALõDEL),[0.5]+/DELõèVAL½XðVAL' '¸CLOSE/NEWTON' 'MAX½(S2½Sõ1.415)+(+/Xð       ø
+ CENTõCENT)*0.5' 'MAX½(MAXø.*ìæADDH)+.õADDH' 'NEWR½MAXõSõSöX/DR' 'X½(~X)       ø
+ ëX\(NEWR+S2)ò(+/DELõDEL)*0.5' 'CENT½(4 1õæCENT)æ0 2 1 2í(CENT½XðCENT)ø.       ø
+ +SQõS½Sö2' 'CLOSE½(8óCNT)ë(1ÆæCENT)ó1ÆæDER' '¸LOOP' 'NEWTON:CENT½(XðCEN       ø
+ T)-DEL' '¸(^/,TOLò|VAL)/CLEANUP' '¸LOOP' 'CLEANUP:CENT½(CENT[;1]ò0)ðCEN       ø
+ T' 'D½æF' 'I½ý1' 'NEXT:¸((1ÆæCENT)óI½I+1)/END' 'A½CENT[I;]' '¸(A[1]ô0)/       ø
+ COMPLEX' 'U½(-A[0]),1' '¸CHECK' 'COMPLEX:U½(+/AõA),(-2õA[0]),1' 'CHECK:       ø
+ ¸(~^/TOLò|U RXREM F)/NEXT' 'G½G,[0]3ÆU' 'F½F RXQUOT U' '¸CHECK' 'END:DE       ø
+XRR D>æF' '¸(1<æF)/AGAIN' 'G½Gõ~(|G)óEPSILONõ©/,|G'                            ø
+ FRXGCD FX 'C½A RXGCD B;IO;M;U;V;R;RHO;I;Q;T;D;LA;LB;NOTEST;a' 'ä COMP       ø
+ UTES MONIC GCD''S OF REAL POLYNOMIALS.  THE' 'ä RESULT  C  IS  (r RXPRO       ø
+ D A) RXSUM s RXPROD B.' 'IO½1' 'A½Aõ(|A)òEPSILONõ©/,|A' 'B½Bõ(|B)òEPSI       ø
+ LONõ©/,|B' 'EXPANDV' 'M½1©+/ë\èëð0ô((õ/ý1ÇæA),ý1ÆæA)æA' 'M½M©+/ë\èëð0ô(       ø
+ (õ/ý1ÇæB),ý1ÆæB)æB' 'R½õ/RHO½ý1ÇæA' 'NOTEST½1' 'A½(R,M)æ(RHO,M)ÆA RXPRO       ø
+ D LA½(RHO,1)æöRXLEAD A' 'B½(R,M)æ(RHO,M)ÆB RXPROD LB½(RHO,1)æöRXLEAD B'       ø
+  'U½((æA)Æ(R,1)æLA),[1]((æA)æ0),[0.5]A' 'V½((æB)æ0),[1]((æB)Æ(R,1)æLB),       ø
+ [0.5]B' 'I½ìR' 'LOOP:¸(0=æI½(ë/V[3;I;]ô0)/I)/END' 'Q½((æI),M)ÆU[3;I;]RX       ø
+ QUOT V[3;I;]' 'T½(3,(æI),M)ÆU[;I;]RXDIFF V[;I;]RXPROD(3,æQ)æQ' 'T[3;;]½       ø
+ T[3;;]õ(|T[3;;])òí(è1ÇæT)æEPSILONõ©/|V[3;I;]' 'T½(æT)ÆT RXPROD(3,(æI),1       ø
+ )æöRXLEAD T[3;;]' 'U[;I;]½V[;I;]' 'V[;I;]½T' '¸LOOP' 'END:D½1©+/ë\èëð0ô       ø
+ U[3;;]' 'C½(RHO,D)æ(R,D)ÆU[3;;]' 'D½1©+/ë\èëð0ôU[1;;]' 'r½(RHO,D)æ(R,D)       ø
+XÆU[1;;]' 'D½1©+/ë\èëð0ôU[2;;]' 's½(RHO,D)æ(R,D)ÆU[2;;]'                       ø
+ FRXREM FX 'C½A RXREM B;a;Q' 'ä COMPUTES THE REMAINDER OF  B  MODULO  A       ø
+   IN THE' 'ä EUCLIDEAN DOMAIN OF REAL POLYNOMIALS.' 'Q½B RXQUOT A' 'C½a       ø
+X'                                                                             ø
+ FRXFCLEAR FX 'RXFCLEAR;I' 'ä EXPUNGES THE VARIABLE RXRT DESCRIBING THE       ø
+X CURRENT' 'ä QUOTIENT ALGEBRA OF  R[X].' 'I½EX ''RXRT'''                     ø
+ FRXFDIFF FX 'C½A RXFDIFF B' 'ä COMPUTES THE DIFFERENCE OF TWO ARRAYS I       ø
+XN THE' 'ä CURRENT QUOTIENT ALGEBRA OF  R[X].' 'C½A RXFSUM-B'                  ø
+ FRXFSUM FX 'C½A RXFSUM B;D;E' 'ä COMPUTES THE SUM OF TWO ARRAYS OVER T       ø
+ HE CURRENT' 'ä QUOTIENT ALGEBRA OF R[X].' 'D½ý1ÆæC½A RXSUM B' 'DERR Dó+       ø
+ /æRXRT' '¸(DóE½ý1ÆæRXRT)/0' 'C½(((ý1ÇæC),E)ÆC)+(((-ææC)ÆE)ÇC)+.õ((D-E),       ø
+XE)ÆRXRT' 'D½1©+/ë\èëð((õ/ý1ÇæC),E)æCô0' 'C½((ý1ÇæC),D)ÆC'                     ø
+ FRXFINIT FX 'RXFINIT F;IO;D;I' 'ä INITIALIZES THE CURRENT QUOTIENT AL       ø
+ GEBRA OF R[X].' 'IO½0' 'DERR 1õææF' 'DERR 1óD½ý1++/ë\è0ôF' 'RXRT½((D-1       ø
+ ),D)æ-F½(öF[D])õDÆF' 'I½0' 'LOOP:¸((D-1)óI½I+1)/0' 'RXRT[I;]½(0,ý1ÇRXRT       ø
+X[I-1;])-FõRXRT[I-1;D-1]' '¸LOOP'                                              ø
+ FRXFINV FX 'r½RXFINV A;s;D;E' 'ä COMPUTES INVERSES IN THE CURRENT QUOT       ø
+ IENT' 'ä ALGEBRA OF  R[X].' 'DERR(ý1ÆæA)óE½ý1ÆæRXRT' '¸(E=1)/SMALL' 'D½       ø
+XA RXGCD(-RXRT[IO;]),1' 'DERR^/(,D=1),1=ý1ÆæD' '¸0' 'SMALL:r½öA'              ø
+ FRXFPOWER FX 'C½A RXFPOWER B;R;RHO;I;J;M;N;D' 'ä COMPUTES THE B-TH POW       ø
+ ER OF  A  IN THE CURRENT' 'ä QUOTIENT OF  R[X].' 'B½((æB),1)æB' 'EXPAND       ø
+ V' 'DERR(M½ý1ÆæA)óN½ý1ÆæRXRT' 'R½õ/RHO½ý1ÇæA' 'A½(R,N)Æ(R,M½ý1ÆæA)æA' '       ø
+ C½(R,N)æNÆ1' 'I½(B>0)/ìæB½,B' 'LOOP:C[J;]½((æJ),N)ÆC[J;]RXFPROD A[J½(2|       ø
+ B[I])/I;]' '¸(0=æI½(B[I]ò2)/I)/END' 'A[I;]½((æI),N)ÆA[I;]RXFPROD A[I;]'       ø
+X 'B[I]½¾B[I]ö2' '¸LOOP' 'END:D½1©©/,+/ë\è0ôC' 'C½(RHO,D)æ(R,D)ÆC'             ø
+ FRXFPROD FX 'C½A RXFPROD B;D;E' 'ä COMPUTES THE PRODUCT OF TWO ARRAYS        ø
+ OVER THE' 'ä CURRENT QUOTIENT ALGEBRA OF R[X].' 'C½A RXPROD B' 'DERR(D½       ø
+ ý1ÆæC)ó+/æRXRT' '¸(DóE½ý1ÆæRXRT)/0' 'C½(((ý1ÇæC),E)ÆC)+(((-ææC)ÆE)ÇC)+.       ø
+Xõ((D-E),E)ÆRXRT' 'D½1©+/ë\èëð((õ/ý1ÇæC),E)æCô0' 'C½((ý1ÇæC),D)ÆC'             ø
+ FRXGCD0 FX 'C½A RXGCD0 B;M;R;RHO;I;T;D;NOTEST' 'ä COMPUTES MONIC GCD''       ø
+ S OF REAL POLYNOMIALS WITHOUT' 'ä EXPRESSING THE RESULT AS A LINEAR COM       ø
+ BINATION' 'ä OF THE ARGUMENTS.' 'A½Aõ(|A)òEPSILONõ©/,|A' 'B½Bõ(|B)òEPSI       ø
+ LONõ©/,|B' 'EXPANDV' 'M½1©+/ë\è0ô((õ/ý1ÇæA),ý1ÆæA)æA' 'M½M©+/ë\è0ô((õ/ý       ø
+ 1ÇæB),ý1ÆæB)æB' 'I½ìR½õ/RHO½ý1ÇæA' 'NOTEST½1' 'A½(R,M)æ(RHO,M)ÆA RXPROD       ø
+ (RHO,1)æöRXLEAD A' 'B½(R,M)æ(RHO,M)ÆB RXPROD(RHO,1)æöRXLEAD B' 'LOOP:¸(       ø
+ 0=æI½(ë/B[I;]ô0)/I)/END' 'T½((æI),M)ÆB[I;]RXREM A[I;]' 'T½Tõ(|T)òEPSILO       ø
+ Nõ(©/|B[I;])ø.õMæ1' 'T½(æT)ÆT RXPROD((æI),1)æöRXLEAD T' 'A[I;]½B[I;]' '       ø
+XB[I;]½T' '¸LOOP' 'END:D½1©+/ë\èëð0ôA' 'C½(RHO,D)æ(R,D)ÆA'                     ø
+ FRXINTERP FX 'C½A RXINTERP B;IO;D' 'ä INTERPOLATES REAL POLYNOMIALS.        ø
+  THE VECTOR  A' 'ä GIVES THE VALUES OF THE ARGUMENT AND THE VECTORS' 'ä       ø
+  ALONG THE LAST AXIS OF  B  GIVE THE VALUES THE' 'ä POLYNOMIALS ARE TO        ø
+ HAVE.' 'DERR^/(1=ææA),(0<æA),(0<ææB),(æA)=ý1ÆæB' 'IO½0' 'C½B+.õ’íAø.*ì       ø
+XæA' 'C½Cõ(|C)òEPSILONõ©/,|C' 'D½1©©/,+/ë\è0ôC' 'C½((ý1ÇæC),D)ÆC'              ø
+ FSSUB FX 'T½K SSUB N;X' 'ä LISTS ALL K-ELEMENT SUBSETS OF  ìN. ORIGIN        ø
+ DEPENDENT.' 'DERR^/(Kò0),(KóN),(1=æK),(1=æN),(N=¾N½,N),K=¾K½,K' '¸(^/Kô       ø
+ 0 1)/GENERAL' 'T½((K!N),K)æìN' '¸0' 'GENERAL:T½1+(K-1)SSUB N-1' 'X½,T[;       ø
+XIO]ø.>ìN-1' 'T½(X/(æX)æìN-1),T[X/,í((N-1),1ÆæT)æì1ÆæT;]'                     ø
+ FSFEL FX 'R½SFEL A' 'ä COMPUTES THE FIRST ELEMENTS IN THE SETS WHOSE'        ø
+ 'ä CHARACTERISTIC VECTORS ARE IN  A.' 'ä THE SETS MUST BE NONEMPTY.' '¸       ø
+XNOTEST/BEGIN' 'DERR(1óææA)^^/,ë/A' 'BEGIN:R½IO++/^\~A'                       ø
+ FSSORT FX 'W½SSORT V' 'ä SORTS A VECTOR INTO INCREASING ORDER AND REMO       ø
+XVES' 'ä DUPLICATES.' 'DERR 1=ææV' 'W½(1,(1ÇW)>ý1ÇW)/W½V[ûV]'                  ø
+ FRXMATPROD FX 'C½A RXMATPROD B;IO;X;AX;BX;RR;D;NOTEST;RA;RB' 'ä COMPU       ø
+ TES THE MATRIX PRODUCT OF TWO NONSCALAR ARRAYS' 'ä OF REAL POLYNOMIALS.       ø
+ ' 'IO½1' 'DERR^/2ó(ææA),ææB' 'DERR(æA)[ý1+ææA]=1ÆæB' 'C½((RA½ý2ÇæA),(R       ø
+ B½ý1Ç1ÇæB),1)æ0' 'X½1=ì1ÆæB' 'RR½((æRA)+ìæRB),(ìæRA),ææC' 'NOTEST½1' 'L       ø
+ OOP:AX½RRí(RB,RA,ý1ÆæA)æX/[ý1+ææA]A' 'BX½((ý1ÇæC),ý1ÆæB)æXðB' 'C½C RXSU       ø
+XM AX RXPROD BX' '¸(~1ÆX½ý1èX)/LOOP' 'D½1©©/,+/ë\è0ôC' 'C½((ý1ÇæC),D)ÆC'       ø
+ FRXPRODRED FX 'C½RXPRODRED A;IO;RHO;D;E;CC;L;M;NOTEST' 'ä COMPUTES TH       ø
+ E PRODUCT REDUCTION ALONG THE LAST' 'ä AXIS OF AN ARRAY OF REAL POLYNOM       ø
+ IALS.' '¸(1òææC½A)/0' 'IO½1' 'L½õ/RHO½ý2ÇæC' 'C½(L,ý2ÆæC)æC' '¸(0=(æC)       ø
+ [2])/ZERO' 'NOTEST½1' 'LOOP:¸(1=D½(æC)[2])/ONE' 'CC½((L,E,ý1ÆæC)ÆC)RXPR       ø
+ OD(L,(-E½¾Dö2),ý1ÆæC)ÆC' '¸(Dô2õE)/ODD' 'C½CC' '¸LOOP' 'ODD:M½(+/ë\èëð0       ø
+ ôC[;E+1;])©ý1ÆæCC' 'C½((L,M)ÆC[;E+1;]),[2]((ý1ÇæCC),M)ÆCC' '¸LOOP' 'ONE       ø
+X:C½(RHO,ý1ÆæC)æC' '¸0' 'ZERO:C½(RHO,1)æ1'                                     ø
+ FRXREDUCE FX 'B½RXREDUCE A;IO;I;J;K;L;M;N;Q;E;D;Y;Z;U;V;X;a' 'ä REDUC       ø
+ ES A MATRIX OF POLYNOMIALS IN  R[X]  USING' 'ä ROW AND COLUMN OPERATION       ø
+ S.  PRODUCES  MATRICES  r' 'ä AND  s  SUCH THAT  B  IS THE MATRIX PRODU       ø
+ CT OF' 'ä r,  A  AND  s.' 'DERR 3=ææA' 'B½Aõ(|A)òEPSILONõ©/,|A' 'IO½0'       ø
+  'r½(K,K,1)æ1,(K½1ÆæB)æ0' 's½(L,L,1)æ1,(L½(æB)[1])æ0' 'I½ý1' 'LOOPI:¸(^       ø
+ /ý1=D½,RXDEGREE((I,I½I+1),0)ÇB)/CLEANUP' 'V½I+((2ÆæB)-I)˜Dì¾/(Dò0)/D' '       ø
+ X½B[J½V[0];K½V[1];]' 'COL:¸(^/ý1=D½RXDEGREE X RXREM B[;K;])/ROW' 'L½Dì¾       ø
+ /(Dò0)/D' 'Q½B[L;K;]RXQUOT X' 'E½Q RXPROD B[J;;]' 'B½((ý1ÇæB),(ý1ÆæB)©ý       ø
+ 1ÆæE)ÆB' 'B[L;;]½B[L;;]-(1ÇæB)ÆE' 'E½Q RXPROD r[J;;]' 'r½((ý1Çær),(ý1Ææ       ø
+ r)©ý1ÆæE)Ær' 'r[L;;]½r[L;;]-(1Çær)ÆE' 'B½Bõ(|B)òEPSILONõ©/,|B' 'X½B[J½L       ø
+ ;K;]' '¸COL' 'ROW:¸(^/ý1=D½RXDEGREE X RXREM B[J;;])/GENERAL' 'M½Dì¾/(Dò       ø
+ 0)/D' 'Q½B[J;M;]RXQUOT X' 'E½Q RXPROD B[;M;]' 'B½((ý1ÇæB),(ý1ÆæB)©ý1ÆæE       ø
+ )ÆB' 'B[;M;]½B[;M;]-(æB)[0 2]ÆE' 'E½Q RXPROD s[;M;]' 'S½((ý1Çæs),(ý1Ææs       ø
+ )©ý1ÆæE)Æs' 's[;M;]½s[;M;]-(æs)[0 2]ÆE' 'B½Bõ(|B)òEPSILONõ©/,|B' 'X½B[J       ø
+ ;K½M;]' '¸COL' 'GENERAL:¸(^/ý1=D½,RXDEGREE X RXREM(I,I,0)ÇB)/END' 'V½I+       ø
+ ((2ÆæB)-I)˜Dì¾/(Dò0)/D' 'Q½B[L½V[0];K;]RXQUOT X' 'E½Q RXPROD B[J;;]' 'B       ø
+ ½((ý1ÇæB),(ý1ÆæB)©ý1ÆæE)ÆB' 'B[L;;]½B[L;;]-(1ÇæB)ÆE' 'E½Q RXPROD r[J;;]       ø
+ ' 'r½((ý1Çær),(ý1Æær)©ý1ÆæE)Ær' 'r[L;;]½r[L;;]-(1Çær)ÆE' 'Q½B[L;M½V[1];       ø
+ ]RXQUOT X' 'E½Q RXPROD B[;K;]' 'B½((ý1ÇæB),(ý1ÆæB)©ý1ÆæE)ÆB' 'B[;M;]½B[       ø
+ ;M;]-(æB)[0 2]ÆE' 'E½Q RXPROD s[;K;]' 's½((ý1Çæs),(ý1Ææs)©ý1ÆæE)Æs' 's[       ø
+ ;M;]½s[;M;]-(æs)[0 2]ÆE' 'B½Bõ(|B)òEPSILONõ©/,|B' 'X½B[J½L;K½M;]' '¸COL       ø
+ ' 'END:B[I,J;;]½B[J,I;;]' 'r[I,J;;]½r[J,I;;]' 'B[;I,K;]½B[;K,I;]' 's[;I       ø
+ ,K;]½s[;K,I;]' 'B[I;;]½B[I;;]õU½öRXLEAD X' 'r[I;;]½r[I;;]õU' 'Q½B[Y½(I+       ø
+ 1)Çì1ÆæB;I;]RXQUOT B[I;I;]' 'E½(1 0 2í((æB)[1],æQ)æQ)RXPROD((1ÆæQ),1ÇæB       ø
+ )æB[I;;]' 'B½((ý1ÇæB),(ý1ÆæB)©ý1ÆæE)ÆB' 'B[Y;;]½B[Y;;]-((æY),1ÇæB)ÆE' '       ø
+ E½(1 0 2í((ær)[1],æQ)æQ)RXPROD((1ÆæQ),1Çær)ær[I;;]' 'r½((ý1Çær),(ý1Æær)       ø
+ ©ý1ÆæE)Ær' 'r[Y;;]½r[Y;;]-((æY),1Çær)ÆE' 'Q½B[I;Z½(I+1)Çì(æB)[1];]RXQUO       ø
+ T B[I;I;]' 'B[I;Z;]½0' 'E½(1 0 2í((1ÆæQ),(æs)[0 2])æs[;I;])RXPROD((1Ææs       ø
+ ),æQ)æQ' 's½((ý1Çæs),(ý1Ææs)©ý1ÆæE)Æs' 's[;Z;]½s[;Z;]-((1Ææs),(æZ),ý1Ææ       ø
+ s)ÆE' 'B½Bõ(|B)òEPSILONõ©/,|B' '¸LOOPI' 'CLEANUP:D½1©+/ë\èëðëð0ôB' 'B½(       ø
+ (ý1ÇæB),D)ÆB' 'D½1©+/ë\èëðëð0ôr' 'r½((ý1Çær),D)Ær' 'D½1©+/ë\èëðëð0ôs' '       ø
+Xs½((ý1Çæs),D)Æs'                                                              ø
+ FRXROWREDUCE FX 'B½RXROWREDUCE A;IO;I;J;K;L;C;D;M;a' 'ä ROW REDUCES A        ø
+ MATRIX OF POLYNOMIALS IN  R[X].' 'ä PRODUCES AN INVERTIBLE MATRIX  r' '       ø
+ ä OF POLYNOMIALS SUCH THAT  B  IS  r RXMATPROD A.' 'ä THE VECTOR  v  LI       ø
+ STS THE COLUMNS OF THE CORNER' 'ä ENTRIES OF  B.' 'DERR 3=ææA' 'B½A' 'I       ø
+ O½IO' 'IO½1' 'v½ì0' 'r½(K,K,1)æ1,(K½1ÆæB)æI½J½0' 'LOOP:¸((Jò1ÆæB)ë(æB       ø
+ )[2]<I½I+1)/END' 'BACK:¸(0=æD½(Cò0)/C½RXDEGREE(J,0)ÇB[;I;])/LOOP' 'K½J+       ø
+ Cì¾/D' 'C½B[;I;]RXQUOT B[K;I;]' 'C[K;]½0' 'D½2 1 3í((æB)[2],æC)æC' 'B½B       ø
+  RXDIFF D RXPROD(æB)æB[K;;]' 'D½2 1 3í((ær)[2],æC)æC' 'r½r RXDIFF D RXP       ø
+ ROD(ær)ær[K;;]' '¸(1<+/ë/0ô(J,0)ÇB[;I;])/BACK' 'v½v,I' 'B[J,K;;]½B[K,J½       ø
+ J+1;;]' 'r[J,K;;]½r[K,J;;]' 'B[J;;]½B[J;;]õM½öRXLEAD B[J;I;]' 'r[J;;]½r       ø
+X[J;;]õM' '¸LOOP' 'END:v½v-1-IO½IO'                                           ø
+ FSCHV FX 'A½N SCHV S;RS' 'ä COMPUTES THE CHARACTERISTIC VECTORS OF AN        ø
+ ARRAY OF INTEGER' 'ä VECTORS LISTING SUBSETS OF  ìN.  ORIGIN DEPENDENT.       ø
+ ' '¸NOTEST/BEGIN' 'DERR^/(N>0),(N=¾N),1=æN½,N' 'DERR^/(,S=¾S),(,SòIO),       ø
+ ,S<IO+N' '¸(0<ææS)/BEGIN' 'S½,S' 'BEGIN:A½(Nõõ/RS½ý1ÇæS)æ0' 'S½((õ/RS)       ø
+ ,ý1ÆæS)æS' 'A[IO+N((õ/æS)æ(ì1ÆæS)-IO),[IO-0.5],íS-IO]½1' 'A½(RS,N)       ø
+XæA'                                                                           ø
+ FSEQREL FX 'T½SEQREL E;X;NT' 'ä TESTS IF E IS THE CHARACTERISTIC MATRI       ø
+ X OF AN' 'ä EQUIVALENCE RELATION ON  ì1ÆæE.  E  MUST BE A' 'ä SQUARE LO       ø
+ GICAL MATRIX.' '¸NOTEST/BEGIN' 'DERR^/(2=ææE),(=/æE),,Eî0 1' 'BEGIN:¸(~       ø
+ T½^/(2æIO)íE)/0' 'NT½NOTEST' 'NOTEST½1' 'T½^/,E=Xø.=X½SFEL E' 'NOTEST½       ø
+XNT'                                                                           ø
+ FRDET FX 'D½RDET A;IO;K;M;I;J;X;Y' 'ä COMPUTES AN APPROXIMATION TO TH       ø
+ E DETERMINANT OF' 'ä THE REAL MATRIX  A.' 'DERR(2=ææA)^=/æA' 'D½IO½1'        ø
+ 'LOOP:¸(0=K½1ÆæA)/0' 'A½Aõ(|A)òEPSILONõM½©/,|A' '¸(M=0)/ZERO' 'I½(©/|A)       ø
+ ìM' 'J½(|A[I;])ìM' 'D½DõA[I;J]õý1*I+J' 'X½A[I;]öA[I;J]' 'A½(IôìK)ðA' 'A       ø
+X½(JôìK)/A-A[;J]ø.õX' '¸LOOP' 'ZERO:D½0'                                       ø
+ FRLSYS FX 'C½A RLSYS B;T;X;r;v' 'ä SOLVES LINEAR SYSTEMS OVER  R.  PRO       ø
+ DUCES AN ARRAY  C' 'ä SUCH THAT  A+.õC  IS  B  AND A MATRIX  w  WHOSE'        ø
+ 'ä ROWS SPAN THE SOLUTION SPACE OF THE CORRESPONDING' 'ä HOMOGENEOUS SY       ø
+ STEM.' 'DERR^/(2=ææA),(1óææB),(1ÆæA)=1ÆæB' 'A½RROWREDUCE A' 'B½Bõ(|B)òE       ø
+ PSILONõ©/(,|A),,|B½r+.õB' 'DERR^/,0=((æv),(ý1+ææB)æ0)ÇB' 'X½(~T½(ý1ÆæA)       ø
+ SCHV v)/ìý1ÆæA' 'w½((æX),æT)æ0' 'w[;X]½Xø.=X' 'w[;v]½í-A[ìæv;X]' 'C½Tñ(       ø
+X(æv),1ÇæB)ÆB'                                                                 ø
+ FRROWREDUCE FX 'B½RROWREDUCE A;IO;I;J;K;L;M;F;X' 'ä ROW REDUCES THE RE       ø
+ AL MATRIX  B.  PRODUCES  r, AN' 'ä INVERTIBLE REAL MATRIX SUCH THAT  B        ø
+  IS  r+.õA.' 'ä THE VECTOR  v  LISTS THE COLUMNS CONTAINING THE' 'ä COR       ø
+ NER ENTRIES OF  B.' 'DERR 2=ææB½Aõ(|A)òEPSILONõ©/,|A' 'IO½IO' 'IO½1'        ø
+ 'L½ý1ÆæB' 'r½(K,K)æ1,(K½1ÆæB)æ0' 'v½ìI½J½0' 'LOOP:¸((JòK)ëL<I½I+1)/END'       ø
+  '¸(0=M½©/C½|JÇB[;I])/LOOP' 'v½v,I' 'X½J+CìM' 'B[J,X;]½B[X,J½J+1;]' 'r[       ø
+ J,X;]½r[X,J;]' 'B[J;]½B[J;]õM½öB[J;I]' 'r[J;]½r[J;]õM' 'F½(JôìK)õB[;I]'       ø
+  'B½Bõ(|B)òEPSILONõ©/,|B½B-Fø.õB[J;]' 'r½r-Fø.õr[J;]' '¸LOOP' 'END:v½v-       ø
+X1-IO½IO' 'r½rõ(|r)òEPSILONõ©/,|r'                                            ø
+ FTRAV FX 'B½TRAV A;R' 'ä TRANSPOSES AN ARRAY OF VECTORS.' '¸(1òææA)/SM       ø
+XALL' 'R½ìææA' 'B½((èý1ÇR),ý1ÆR)íA' '¸0' 'SMALL:B½A'                           ø
+ FZGCD0 FX 'C½A ZGCD0 B;RHO;T;I' 'ä COMPUTES INTEGER GCD''S WITH A MINI       ø
+ MUM AMOUNT OF' 'ä CHECKING AND WITHOUT EXPRESSING THE RESULT AS A' 'ä L       ø
+ INEAR COMBINATION OF THE ARGUMENTS.' '¸NOTEST/BEGIN' 'DERR^/(,A=¾A),,B=       ø
+ ¾B' 'EXPAND' 'BEGIN:RHO½æA' 'I½ìæA½|,A' 'B½|,B' 'LOOP:¸(0=æI½(B[I]ô0)/I       ø
+X)/END' 'T½B[I]|A[I]' 'A[I]½B[I]' 'B[I]½T' '¸LOOP' 'END:C½RHOæA'               ø
+ FZXDEGREE FX 'B½ZXDEGREE A' 'ä COMPUTES THE ARRAY OF DEGREES OF AN ARR       ø
+ AY OF INTEGER' 'ä POLYNOMIALS.' '¸NOTEST/BEGIN' 'DERR^/,A=¾A' '¸(0<ææA)       ø
+X/BEGIN' 'A½,A' 'BEGIN:B½ý1++/ë\èAô0'                                          ø
+ FZFACTOR FX 'P½ZFACTOR N;Q;R;IO' 'ä FACTORS A POSITIVE INTEGER INTO A       ø
+  PRODUCT OF PRIMES.' 'ä THE RESULT IS CORRECT IF  N  IS LESS THAN 2.5E9       ø
+ .' 'DERR^/(N=¾N),(1óN),1=æN½,N' 'P½ìIO½0' 'Q½2 3 5,R½,(30õì77¾©(N*0.5)       ø
+ ö30)ø.+7 11 13 17 19 23 29 31' 'LOOP:¸(0=æQ½(0=Q|N)/Q)/NEXT' 'P½P,1ÆQ'        ø
+ '¸LOOP,N½¾NöQ[0]' 'NEXT:¸(N=1)/0' '¸((ý1ÆR)ò50000¾N*0.5)/END' '¸(R[0]ô7       ø
+X)/GEN' 'R½(^ð0ô7 11ø.|R)/R' 'GEN:Q½R½R+2310' '¸LOOP' 'END:P½P,N'              ø
+ FZNDET FX 'D½ZNDET A;IO;V;J;W;Q' 'ä COMPUTES THE DETERMINANT OF AN IN       ø
+ TEGER MATRIX' 'ä USING INTEGER ROW OPERATIONS MODULO  n.' 'DERR^/(n<100       ø
+ 00000),(,A=¾A),(2=ææA),=/æA½n|A' 'D½IO½1' '¸(0=1ÆæA)/0' 'LOOP:¸(1=1ÆæA       ø
+ )/END' 'BACK:¸(^/0=V½A[;1])/ZERO' 'J½Vì¾/(Vô0)/V' '¸(J=1)/OK' 'A[1,J;]½       ø
+ A[J,1;]' 'D½n|-D' 'OK:¸(^/0=W½1ÇA[;1])/ENDLP' 'Q½0,¾WöA[1;1]' 'A½n|A-Qø       ø
+ .õA[1;]' '¸BACK' 'ENDLP:D½n|DõA[1;1]' 'A½1 1ÇA' '¸LOOP' 'ZERO:¸D½0' 'EN       ø
+XD:D½n|DõA[1;1]'                                                               ø
+ FZACLEAR FX 'ZACLEAR;I' 'ä EXPUNGES THE ARRAY OF STRUCTURE CONSTANTS F       ø
+XOR' 'ä THE CURRENT Z-ALGEBRA.' 'I½EX ''ZSC'''                                ø
+ FZADIFF FX 'C½A ZADIFF B' 'ä COMPUTES DIFFERENCES IN THE CURRENT Z-ALG       ø
+XEBRA.' 'C½A ZASUM-B'                                                          ø
+ FZASUM FX 'C½A ZASUM B' 'ä COMPUTE SUMS IN THE CURRENT Z-ALGEBRA.' 'A½       ø
+XZANRMLZ A' 'B½ZANRMLZ B' 'EXPANDV' 'C½A+B'                                    ø
+ FZANRMLZ FX 'C½ZANRMLZ A;IO' 'ä RETURNS THE STANDARD REPRESENTATION O       ø
+ F AN ARRAY' 'ä OVER THE THE CURRENT Z-ALGEBRA.  SCALARS AND' 'ä VECTORS       ø
+  OF LENGTH 1 ARE PADDED WITH ZEROS.' 'IO½1' 'DERR^/(,A=¾A),(0=ææA)ë(1=       ø
+ ý1ÆæA)ë(1ÆæZSC)=ý1ÆæA' 'C½((æA),ì0=ææA)æA' '¸((1ÆæZSC)=ý1ÆæC)/0' 'C½((ý       ø
+X1ÇæC),1ÆæZSC)ÆC'                                                              ø
+ FZAINIT FX 'ZAINIT A' 'ä INITIALIZES THE ARRAY OF STRUCTURE CONSTANTS'       ø
+  'ä FOR THE CURRENT Z-ALGEBRA.' 'DERR^/(3=ææA),((1ÇæA)=ý1ÇæA),,A=¾A' 'Z       ø
+XSC½A'                                                                         ø
+ FZANEG FX 'C½ZANEG A' 'ä COMPUTES NEGATIVES IN THE CURRENT Z-ALGEBRA.'       ø
+X 'C½ZANRMLZ-A'                                                                ø
+ FZAPOWER FX 'C½A ZAPOWER B;R;RHO;I;J;M' 'ä COMPUTES THE B-TH POWER OF        ø
+  A  IN THE CURRENT' 'ä Z-ALGEBRA.' 'DERR^/(,B=¾B),,Bò0' 'A½ZANRMLZ A' '       ø
+ B½((æB),1)æB' 'EXPANDV' 'R½õ/ý1ÇRHO½æA' 'A½(R,M½ý1ÆæA)æA' 'C½(æA)æMÆ1'        ø
+ 'I½(B>0)/ìæB½,B' 'LOOP:C[J;]½C[J;]ZAPROD A[J½(2|B[I])/I;]' '¸(0=æI½(B[I       ø
+ ]ò2)/I)/END' 'A[I;]½A[I;]ZAPROD A[I;]' 'B[I]½¾B[I]ö2' '¸LOOP' 'END:C½RH       ø
+XOæC'                                                                          ø
+ FZAPROD FX 'C½A ZAPROD B;IO;R;RHO;M' 'ä COMPUTES PRODUCTS IN THE CURR       ø
+ ENT Z-ALGEBRA.' 'A½ZANRMLZ A' 'B½ZANRMLZ B' 'EXPANDV' 'R½õ/ý1ÇRHO½æA' '       ø
+ IO½0' 'M½ý1ÆæZSC' 'A½(R,MõM)æ2 0 1í(M,R,M)æA' 'B½(R,MõM)æ1 0 2í(M,R,M)       ø
+XæB' 'C½AõB' 'C½RHOæC+.õ((MõM),M)æZSC'                                         ø
+ FZCHREM FX 'C½A ZCHREM B;IO;r;s;RHO;D;L;M;N;B1;B2;A1;F;E;X' 'ä SOLVES       ø
+  THE SIMULTANEOUS CONGRUENCE  C  CONGRUENT' 'ä TO THE I-TH CROSS SECTIO       ø
+ N OF  A  ALONG THE LAST AXIS' 'ä MODULO B[I]. THE VARIABLE B MUST BE A        ø
+ VECTOR AND' 'ä THE LCM OF THE COMPONENTS OF  B  IN COMPUTED AS  m.' 'I       ø
+ O½1' 'X½^/(1=ææB),(1óææA),((ý1ÆæA)=æB),(0<æB),,0ôB½|B' 'DERR^/X,(,B=¾B)       ø
+ ,,A=¾A' 'A½((N½õ/RHO½ý1ÇæA),ý1ÆæA)æA' 'LOOP:¸(1=M½æB)/END' 'L½B1õ¾B2öD½       ø
+ (B1½EÆB)ZGCD B2½(-E½¾Mö2)ÆB' 'DERR^/,0=((æF)æD)|F½((N,-E)ÆA)-A1½(N,E)ÆA       ø
+ ' 'B½B[X½(E+1)õìMô2õE],L' 'A½(A[;X]),((æF)æL)|A1+(¾Fö(æF)æD)õ(æF)ærõB1'       ø
+X '¸LOOP' 'END:m½B[1]' 'C½RHOæA'                                               ø
+ FZGCD FX 'C½A ZGCD B;IO;RHO;M;U;V;I;Q;T' 'ä C  IS RETURNED AS THE ENT       ø
+ RY-BY-ENTRY GCD OF THE INTEGER' 'ä ARRAYS  A  AND  B.' 'ä THE VARIABLES       ø
+  r AND s EXPRESS C AS(rõA)+sõB.' 'IO½1' '¸NOTEST/BEGIN' 'DERR^/(,A=¾A)       ø
+ ,,B=¾B' 'ä TEST FOR CONFORMABILITY.' 'EXPAND' 'ä REPLACE  A  AND  B  BY       ø
+  THEIR RAVELS AND' 'ä APPLY THE EUCLIDEAN ALGORITHM.' 'BEGIN:M½õ/RHO½æA       ø
+ ' 'U½(3,M)æ(õA),(Mæ0),|A½,A' 'V½(æU)æ(Mæ0),(õB),|B½,B' 'I½ìM' 'LOOP:¸(0       ø
+ =æI½(V[3;I]ô0)/I)/END' 'T½U[;I]-V[;I]õ(3,æI)æ¾U[3;I]öV[3;I]' 'U[;I]½V[;       ø
+XI]' 'V[;I]½T' '¸LOOP' 'END:C½RHOæU[3;]' 'r½RHOæU[1;]' 's½RHOæU[2;]'           ø
+ FZDET FX 'D½ZDET A;IO;V;J;W;Q' 'ä COMPUTES THE DETERMINANT OF AN INTE       ø
+ GER MATRIX' 'ä USING INTEGER ROW OPERATIONS.' 'DERR^/(,A=¾A),(2=ææA),=/       ø
+ æA' 'D½IO½1' '¸(0=1ÆæA)/0' 'LOOP:¸(1=1ÆæA)/END' 'BACK:¸(^/0=V½|A[;1])/       ø
+ ZERO' 'J½Vì¾/(Vô0)/V' '¸(J=1)/OK' 'A[1,J;]½A[J,1;]' 'D½-D' 'OK:¸(^/0=W½       ø
+ 1ÇA[;1])/ENDLP' 'Q½0,(¾Wö|A[1;1])õõA[1;1]' 'A½A-Qø.õA[1;]' '¸BACK' 'END       ø
+XLP:D½DõA[1;1]' 'A½1 1ÇA' '¸LOOP' 'ZERO:¸D½0' 'END:D½DõA[1;1]'                 ø
+ FZLCM FX 'C½A ZLCM B' 'ä COMPUTES THE ENTRY-BY-ENTRY LCM OF THE' 'ä IN       ø
+XTEGER ARRAYS  A  AND  B.' 'C½(Cô0)õ¾(C½|AõB)öA ZGCD0 B'                       ø
+ FZLSYS FX 'C½A ZLSYS B;IO;M;D;Q;r;s' 'ä SOLVES LINEAR SYSTEMS OVER TH       ø
+ E INTEGERS.' 'ä A  IS THE MATRIX OF COEFFICIENTS AND THE VECTORS' 'ä OF       ø
+  CONSTANT TERMS ARE THE VECTORS ALONG THE FIRST' 'ä AXIS OF  B.  THE RO       ø
+ WS OF THE GLOBAL ARRAY  w' 'ä ARE A BASIS FOR THE SOLUTIONS OF THE CORR       ø
+ ESPONDING' 'ä HOMOGENEOUS SYSTEM.' 'IO½1' 'DERR^/(2=ææA),(,A=¾A),(,B=¾       ø
+ B),(1óææB),(1ÆæA)=1ÆæB' 'D½(M½+/Dô0)ÆD½1 1íA½ZREDUCE A' 'DERR^/,0=(M,(ý       ø
+ 1+ææB)æ0)ÇB½r+.õB' 'w½í(0,M)Çs' 'DERR^/0=(Q½í(èæB)æD)|B½(M,1ÇæB)ÆB' 'C½       ø
+X(((1Ææs),M)Æs)+.õ¾BöQ'                                                        ø
+ FZREDUCE FX 'B½ZREDUCE A;IO;I;J;K;L;M;Q;D;Y;Z;X;V' 'ä REDUCES AN INTE       ø
+ GER MATRIX.  PRODUCES INVERTIBLE' 'ä INTEGER MATRICES  r  AND  s  SUCH        ø
+ THAT  B  IS' 'ä THE MATRIX PRODUCT OF  r,  A  AND  s.' 'IO½0' 'DERR^/(       ø
+ 2=ææA),,B=¾B½A' 'r½(K,K)æ1,(K½1ÆæB)æ0' 's½(L,L)æ1,(L½1ÇæB)æ0' 'I½ý1' 'L       ø
+ OOPI:¸(^/0=D½|,(I,I½I+1)ÇB)/0' 'V½I+((æB)-I)˜Dì¾/(Dô0)/D' 'X½B[J½V[0];K       ø
+ ½V[1]]' 'COL:¸(^/0=D½|X|B[;K])/ROW' 'L½Dì¾/(Dô0)/D' 'B[L;]½B[L;]-(Q½¾(B       ø
+ [L;K]-X|B[L;K])öX)õB[J;]' 'r[L;]½r[L;]-Qõr[J;]' 'X½B[J½L;K]' '¸COL' 'RO       ø
+ W:¸(^/0=D½|X|B[J;])/GENERAL' 'M½Dì¾/(Dô0)/D' 'B[;M]½B[;M]-(Q½¾(B[J;M]-X       ø
+ |B[J;M])öX)õB[;K]' 's[;M]½s[;M]-Qõs[;K]' 'X½B[J;K½M]' '¸COL' 'GENERAL:¸       ø
+ (^/0=D½|X|,(I,I)ÇB)/END' 'V½I+((æB)-I)˜Dì¾/(Dô0)/D' 'B[L;]½B[L;]-(Q½ý1+       ø
+ ¾B[L½V[0];K]öX)õB[J;]' 'r[L;]½r[L;]-Qõr[J;]' 'B[;M]½B[;M]-(Q½¾(B[L;M]-X       ø
+ |B[L;M½V[1]])öX)õB[;K]' 's[;M]½s[;M]-Qõs[;K]' 'X½B[J½L;K½M]' '¸COL' 'EN       ø
+ D:B[I,J;]½B[J,I;]' 'r[I,J;]½r[J,I;]' 'B[;I,K]½B[;K,I]' 's[;I,K]½s[;K,I]       ø
+ ' 'B[I;]½B[I;]õõX' 'r[I;]½r[I;]õõX' 'B[Y;]½B[Y;]-(Q½¾B[Y½(I+1)Çì1ÆæB;I]       ø
+ öB[I;I])ø.õB[I;]' 'r[Y;]½r[Y;]-Qø.õr[I;]' 'B[;Z]½B[;Z]-B[;I]ø.õQ½¾B[I;Z       ø
+X½(I+1)Çì1ÇæB]öB[I;I]' 's[;Z]½s[;Z]-s[;I]ø.õQ' '¸LOOPI'                        ø
+ FZMATINV FX 'C½ZMATINV A;IO;B;r;v' 'ä COMPUTES THE INVERSE OF THE SQU       ø
+ ARE INTEGER' 'ä MATRIX  A, WHICH MUST HAVE DETERMINANT 1 OR ý1.' 'DERR^       ø
+X/(2=ææA),=/æA' 'IO½1' 'B½ZROWREDUCE A' 'DERR^/1=1 1íB' 'C½r'                 ø
+ FZROWREDUCE FX 'B½ZROWREDUCE A;IO;I;J;K;L;D;E;F;X;Y;N;M' 'ä ROW REDUCE       ø
+ S THE INTEGER MATRIX  A.  PRODUCES  r, AN' 'ä INVERTIBLE INTEGER MATRIX       ø
+  SUCH THAT  B  IS  r+.õA.' 'ä ALSO PRODUCES A VECTOR v LISTING THE COLU       ø
+ MNS CONTAINING' 'ä THE CORNER ENTRIES OF B.' 'DERR^/(2=ææA),,A=¾A' 'IO½       ø
+ IO' 'IO½1' 'L½ý1ÆæB½A' 'r½(K,K)æ1,(K½1ÆæB)æ0' 'v½ìI½J½0' 'LOOP:¸((JòK       ø
+ )ëL<I½I+1)/END' 'BACK:¸(0=æD½(Eô0)/E½|JÇB[;I])/LOOP' 'X½J+EìN½¾/D' 'F½(       ø
+ (XôY½JÇìK)õJÇB[;I])ZQUOT B[X;I]' 'B[Y;]½((J,0)ÇB)-Fø.õB[X;]' 'r[Y;]½((J       ø
+ ,0)Çr)-Fø.õr[X;]' '¸(1<+/0ôJÇB[;I])/BACK' 'v½v,I' 'B[J,X;]½B[X,J½J+1;]'       ø
+  'r[J,X;]½r[X,J;]' 'B[J;]½B[J;]õM½õB[J;I]' 'r[J;]½r[J;]õM' 'F½B[Y½ìJ-1;       ø
+ I]ZQUOT B[J;I]' 'B[Y;]½B[Y;]-Fø.õB[J;]' 'r[Y;]½r[Y;]-Fø.õr[J;]' '¸LOOP'       ø
+X 'END:v½v-1-IO½IO'                                                           ø
+ FZQUOT FX 'C½A ZQUOT B' 'ä COMPUTES THE INTEGER QUOTIENT OF TWO INTEGE       ø
+XR ARRAYS.' '¸NOTEST/BEGIN' 'DERR^/(,A=¾A),,B=¾B' 'BEGIN:C½(¾Aö|B)õõB'         ø
+ FZNACLEAR FX 'ZNACLEAR;I' 'ä EXPUNGES THE ARRAY OF STRUCTURE CONSTANTS       ø
+X' 'ä FOR THE CURRENT ZN-ALGEBRA.' 'I½EX ''ZNSC'''                            ø
+ FZNADIFF FX 'C½A ZNADIFF B' 'ä COMPUTES DIFFERENCES IN THE CURRENT ZN-       ø
+XALGEBRA.' 'C½A ZNASUM-B'                                                      ø
+ FZNASUM FX 'C½A ZNASUM B' 'ä COMPUTE SUMS IN THE CURRENT ZN-ALGEBRA.'        ø
+X'A½ZNANRMLZ A' 'B½ZNANRMLZ B' 'EXPANDV' 'C½n|A+B'                             ø
+ FZNANRMLZ FX 'C½ZNANRMLZ A;IO' 'ä RETURNS THE STANDARD REPRESENTATION       ø
+  OF AN ARRAY' 'ä OVER THE THE CURRENT ZN-ALGEBRA.  SCALARS AND' 'ä VECT       ø
+ ORS OF LENGTH 1 ARE PADDED WITH ZEROS.' 'IO½1' 'DERR^/(,A=¾A),(0=ææA)ë       ø
+ (1=ý1ÆæA)ë(1ÆæZNSC)=ý1ÆæA' 'C½((æA),ì0=ææA)æn|A' '¸((1ÆæZNSC)=ý1ÆæC)/0'       ø
+X 'C½((ý1ÇæC),1ÆæZNSC)ÆC'                                                      ø
+ FZNAINIT FX 'ZNAINIT A' 'ä INITIALIZES THE ARRAY OF STRUCTURE CONSTANT       ø
+ S' 'ä FOR THE CURRENT ZN-ALGEBRA.' 'DERR^/(3=ææA),((1ÇæA)=ý1ÇæA),,A=¾A'       ø
+X 'ZNSC½n|A'                                                                   ø
+ FZNANEG FX 'C½ZNANEG A' 'ä COMPUTES NEGATIVES IN THE CURRENT ZN-ALGEBR       ø
+XA.' 'C½ZNANRMLZ n|-A'                                                         ø
+ FZNAPOWER FX 'C½A ZNAPOWER B;R;RHO;I;J;M' 'ä COMPUTES THE B-TH POWER O       ø
+ F  A  IN THE CURRENT' 'ä ZN-ALGEBRA.  n  MUST NOT EXCEED 1E7.' 'DERR^/(       ø
+ nó1000000),(,B=¾B),,Bò0' 'A½ZNANRMLZ A' 'B½((æB),1)æB' 'EXPANDV' 'R½õ/ý       ø
+ 1ÇRHO½æA' 'A½(R,M½ý1ÆæA)æA' 'C½(æA)æMÆ1' 'I½(B>0)/ìæB½,B' 'LOOP:C[J;]½C       ø
+ [J;]ZNAPROD A[J½(2|B[I])/I;]' '¸(0=æI½(B[I]ò2)/I)/END' 'A[I;]½A[I;]ZNAP       ø
+XROD A[I;]' 'B[I]½¾B[I]ö2' '¸LOOP' 'END:C½RHOæC'                               ø
+ FZNAPROD FX 'C½A ZNAPROD B;IO;R;RHO;M' 'ä COMPUTES PRODUCTS IN THE CU       ø
+ RRENT ZN-ALGEBRA.' 'ä n  MUST NOT EXCEED 1E7.' 'DERR nó10000000' 'A½ZNA       ø
+ NRMLZ A' 'B½ZNANRMLZ B' 'EXPANDV' 'R½õ/ý1ÇRHO½æA' 'IO½0' 'M½ý1ÆæZNSC'        ø
+ 'A½(R,MõM)æ2 0 1í(M,R,M)æA' 'B½(R,MõM)æ1 0 2í(M,R,M)æB' 'C½n|AõB' 'C½RH       ø
+XOæn|C+.õ((MõM),M)æZNSC'                                                       ø
+ FZNDIFF FX 'C½A ZNDIFF B' 'ä COMPUTES THE DIFFERENCE OF  A  AND  B  MO       ø
+ DULO  n.' 'ä A  AND  B  MUST BE INTEGERS.' '¸NOTEST/BEGIN' 'DERR^/(,A=¾       ø
+XA),,B=¾B' 'BEGIN:C½n|A-B'                                                     ø
+ FZNINV FX 'B½ZNINV A;r;s;D' 'ä COMPUTES THE INVERSES OF THE ENTRIES OF       ø
+X  A  MODULO  n.' 'DERR^/,1=A ZGCD(æA)æn' 'B½n|r'                              ø
+ FZNLSYS FX 'C½A ZNLSYS B;T;X;r;v' 'ä SOLVES LINEAR SYSTEMS OVER  ZN, W       ø
+ HERE  n  MUST BE' 'ä PRIME.  PRODUCES AN ARRAY  C  SUCH THAT  A+.õC  IS       ø
+ ' 'ä B  AND A MATRIX  w  WHOSE ROWS ARE A BASIS FOR THE' 'ä SOLUTION SP       ø
+ ACE OF THE CORRESPONDING HOMOGENEOUS' 'ä SYSTEM.' 'DERR^/(1=æZFACTOR n)       ø
+ ,(,A=¾A),(,B=¾B)' 'DERR^/(2=ææA),(1óææB),(1ÆæA)=1ÆæB' 'A½ZNROWREDUCE A'       ø
+  'B½n|r+.õB' 'DERR^/,0=((æv),(ý1+ææB)æ0)ÇB' 'X½(~T½(ý1ÆæA)SCHV v)/ìý1Ææ       ø
+ A' 'w½((æX),æT)æ0' 'w[;X]½Xø.=X' 'w[;v]½ín|-A[ìæv;X]' 'C½Tñ((æv),1ÇæB)Æ       ø
+XB'                                                                            ø
+ FZNROWREDUCE FX 'B½ZNROWREDUCE A;IO;I;J;K;L;M;X;U;GCD;s;Y;D;NOTEST;R'        ø
+ 'ä ROW REDUCES  A  MODULO  n, WHICH MUST BE LESS' 'ä THAN 1E7.  PRODUCE       ø
+ S  r, AN INVERTIBLE MATRIX MODULO  n' 'ä SUCH THAT  B  IS  r ZNMATPROD        ø
+ A, AND A VECTOR  v  LISTING' 'ä THE COLUMNS CONTAINING THE ''CORNER ENT       ø
+ RIES'' OF  B.' 'DERR^/(n<10000000),(,A=¾A),2=ææA' 'IO½IO' 'IO½NOTEST½       ø
+ 1' 'L½ý1ÆæB½n|A' 'R½(K,K)æ1,(K½1ÆæB)æ0' 'v½ìI½J½0' 'LOOP1:¸((JòK)ëL<I½I       ø
+ +1)/END' 'LOOP2:¸(^/0=U½JÇB[;I])/LOOP1' 'M½¾/(Uô0)/U' 'X½J+UìM' 'D½M ZG       ø
+ CD n' 'B[X;]½n|B[X;]õr' 'R[X;]½n|R[X;]õr' 'Y½(XôìK)õB[;I]ZQUOT(1ÆæB)æB[       ø
+ X;I]' 'B½n|B-Yø.õB[X;]' 'R½n|R-Yø.õR[X;]' '¸(1=+/Uô0)/END1' '¸LOOP2' 'E       ø
+ ND1:v½v,I' 'B[J,X;]½B[X,J½J+1;]' 'R[J,X;]½R[X,J;]' '¸LOOP1' 'END:v½v-1-       ø
+XIO½IO' 'r½R'                                                                 ø
+ FZNMATINV FX 'C½ZNMATINV A;IO;B;r;v' 'ä COMPUTES THE INVERSE OF THE S       ø
+ QUARE INTEGER' 'ä MATRIX  A  MODULO  n.' 'DERR^/(2=ææA),=/æA' 'IO½1' '       ø
+XB½ZNROWREDUCE A' 'DERR^/1=1 1íB' 'C½r'                                        ø
+ FZNMATPROD FX 'C½A ZNMATPROD B' 'ä COMPUTES THE MATRIX PRODUCT OF THE        ø
+ ARRAYS  A  AND  B' 'ä MODULO  n, WHICH IS ASSUMED TO BE LESS THAN 1E7.'       ø
+  '¸NOTEST/BEGIN' 'DERR^/(,A=A½n|A),(,B=¾B½n|B),n<10000000' 'BEGIN:C½n|A       ø
+X+.õB'                                                                         ø
+ FZNNEG FX 'B½ZNNEG A' 'ä COMPUTES THE NEGATIVE OF  A  MODULO  n.' 'ä A       ø
+  MUST BE AN INTEGER ARRAY.' '¸NOTEST/BEGIN' 'DERR^/,A=¾A' 'BEGIN:B½n|-A       ø
+X'                                                                             ø
+ FZNPOWER FX 'C½A ZNPOWER B;RHO;I;J;NOTEST' 'ä COMPUTES  n|A*B  USING T       ø
+ HE BINARY POWER ALGORITHM.' 'ä A  AND  B  MUST BE INTEGER ARRAYS AND  B       ø
+ ò0.' 'DERR^/(,A=¾A),(B=¾B),,Bò0' 'EXPAND' 'RHO½æA' 'C½(æA½,A)æ1' 'I½(B>       ø
+ 0)/ìæB½,B' 'NOTEST½1' 'LOOP:C[J]½C[J]ZNPROD A[J½(2|B[I])/I]' '¸(0=æI½(B       ø
+ [I]ò2)/I)/END' 'A[I]½A[I]ZNPROD A[I]' 'B[I]½¾B[I]ö2' '¸LOOP' 'END:C½RHO       ø
+XæC'                                                                           ø
+ FZNPROD FX 'C½A ZNPROD B;RHO;D;Q;IO' 'ä COMPUTES  n|AõB  USING MULTIP       ø
+ LE PRECISION IF  n ò 1E7.' '¸NOTEST/BEGIN' 'DERR^/(,A=¾A½n|A),,B=¾B½n|B       ø
+ ' 'BEGIN:¸(n>10000000)/GEN' 'C½n|AõB' '¸0' 'GEN:EXPAND' 'RHO½æA' 'IO½1       ø
+ ' 'D½(Q½3æM½1000000)˜¾((A½,A)õB½,B)ön' 'A½Q˜A' 'B½Q˜B' 'C½(5 3,1ÇæA)Æ((       ø
+ 2 1 3í(3æ1)ø.õA)õ(3æ1)ø.õB)-(Q˜n)ø.õD' 'C½+/[2](0 ý1 ý2ø.õ(1ÇæA)æ1)è[1]       ø
+ C' 'LOOP:C[1Çì5;]½ý499999+M|D½499999+1 0ÇC' 'C[ì4;]½(ý1 0ÇC)+¾DöM' '¸(ë       ø
+X/,0ôý3 0ÇC)/LOOP' 'C½n|RHOæM2 0ÇC'                                           ø
+ FZNSUM FX 'C½A ZNSUM B' 'ä COMPUTES THE SUM OF  A  AND  B  MODULO  n.'       ø
+  'ä A AND B MUST BE INTEGER ARRAYS.' '¸NOTEST/BEGIN' 'DERR^/(,A=¾A),,B=       ø
+X¾B' 'BEGIN:C½n|A+B'                                                           ø
+ FZNXDEGREE FX 'B½ZNXDEGREE A' 'ä COMPUTES THE DEGREES OF AN ARRAY OF P       ø
+XOLYNOMIALS' 'ä OVER THE INTEGERS MODULO  n.' 'B½ZXDEGREE n|A'                 ø
+ FZNXDET FX 'D½ZNXDET A;IO;DEG;J;V;W;Q;R;S;a;NOTEST' 'ä COMPUTES THE D       ø
+ ETERMINANT OF A MATRIX OF INTEGER' 'ä POLYNOMIALS MODULO  n, WHICH MUST       ø
+  BE A PRIME' 'ä LESS THAN 1E7.' 'DERR^/(,A=¾A),(3=ææA),(=/2ÆæA),(1=æZFA       ø
+ CTOR n),n<10000000' 'A½n|A' 'D½,IO½NOTEST½1' '¸(0=1ÆæA)/0' 'LOOP:¸(1=1       ø
+ ÆæA)/END' 'BACK:¸(^/ý1=DEG½ý1++/ë\è0ôA[;1;])/ZERO' 'J½DEGì¾/(DEGôý1)/DE       ø
+ G' '¸(J=1)/OK' 'A[1,J;;]½A[J,1;;]' 'D½n|-D' 'OK:¸(^/,0=W½(1 0)ÇA[;1;])/       ø
+ ENDLP' 'Q½(-1 0+æV)ÆV½W ZNXQUOT(æW)æA[1;1;]' 'R½TRAV((2ÆæA),ý1ÆæQ)æQ' '       ø
+ S½(æA)æA[1;;]' 'A½A ZNXDIFF R ZNXPROD S' '¸BACK' 'ENDLP:D½D ZNXPROD A[1       ø
+X;1;]' 'A½1 1 0ÇA' '¸LOOP' 'ZERO:¸D½,0' 'END:D½D ZNXPROD A[1;1;]'              ø
+ FZNXQUOT FX 'C½A ZNXQUOT B;IO;DB;N;K;L;R;I;F;D;E;RHO' 'ä COMPUTES THE       ø
+  QUOTIENT OF  A  BY  B IN THE RING' 'ä OF INTEGER POLYNOMIALS MODULO  n       ø
+ , WHICH MUST BE' 'ä LESS THAN 1E7.  THE LEADING COEFFICIENTS IN  B' 'ä        ø
+ MUST BE UNITS.  THE GLOBAL VARIABLE  a  CONTAINS' 'ä THE REMAINDERS.' '       ø
+ IO½0' 'DERR^/(,A=¾A½n|A),(,B=¾B½n|B),n<10000000' 'EXPANDV' 'DERR^/,0óD       ø
+ B½ý1++/ë\è0ôB' 'N½õ/RHO½æDB' 'L½K©(+/ý1ÆæA)+©/R½(ý1+K½+/ý1ÆæB)-,DB' 'B½       ø
+ (-R)è(N,K)æB' 'A½(-R)è(N,L)Æ(N,ý1ÆæA)æA' 'C½(N,I½1++/L-K)æ2-2' 'E½ZNINV       ø
+  B[;K-1]' 'LOOP:¸(0>I½I-1)/END' 'C[;I]½F½n|A[;I+K-1]õE' 'A[;I+ìK]½n|A[;       ø
+ I+ìK]-Bõí(èæB)æF' '¸LOOP' 'END:D½1©©/,+/ë\è0ôC' 'C½(RHO,D)æ(N,D)ÆC' 'D½       ø
+X1©©/,+/ë\è0ôA½RèA' 'a½(RHO,D)æ(N,D)ÆA'                                        ø
+ FZNXDIFF FX 'C½A ZNXDIFF B' 'ä COMPUTES THE DIFFERENCE OF TWO ARRAYS O       ø
+XF POLYNOMIALS' 'ä OVER THE INTEGERS MODULO  n.' 'C½A ZNXSUM-B'                ø
+ FZNXPROD FX 'C½A ZNXPROD B;D' 'ä COMPUTES THE PRODUCT OF TWO ARRAYS OF       ø
+  POLYNOMIALS' 'ä OVER THE INTEGERS MODULO n.' 'C½n|(n|A)ZXPROD n|B' 'D½       ø
+X1©©/,+/ë\è0ôC' 'C½((ý1ÇæC),D)ÆC'                                              ø
+ FZNXSUM FX 'C½A ZNXSUM B;D' 'ä COMPUTES THE SUM OF TWO ARRAYS OF POLYN       ø
+ OMIALS OF' 'ä INTEGERS MODULO  n.' 'C½n|(n|A)ZXSUM n|B' 'D½1©©/,+/ë\è0ô       ø
+XC' 'C½((ý1ÇæC),D)ÆC'                                                          ø
+ FZXPROD FX 'C½A ZXPROD B;IO;D' 'ä COMPUTES THE ENTRY-BY-ENTRY PRODUCT       ø
+  OF TWO ARRAYS' 'ä OF INTEGER POLYNOMIALS.' '¸NOTEST/BEGIN' 'DERR^/(,A=       ø
+ ¾A),,B=¾B' 'EXPANDV' 'BEGIN:IO½0' 'C½(Aø.õ(ý1ÆæB)æ1)õ((ìý1+ææA),0 ý1+æ       ø
+ æA)íBø.õ(ý1ÆæA)æ1' 'C½C,((æA),ý1+ý1ÆæA)æ0' 'C½+/[ý2+ææC]((æA)æ-ìý1ÆæA)è       ø
+XC' 'D½1©©/,+/ë\èCô0' 'C½((ý1ÇæC),D)ÆC'                                        ø
+ FZXSUM FX 'C½A ZXSUM B;M;D' 'ä COMPUTES THE SUM OF TWO ARRAYS OF INTEG       ø
+ ER POLYNOMIALS.' '¸NOTEST/BEGIN' 'DERR^/(,A=¾A),,B=¾B' 'EXPANDV' 'BEGIN       ø
+X:M½(æA)©æB' 'C½(MÆA)+MÆB' 'D½1©©/,+/ë\èCô0' 'C½((ý1ÇæC),D)ÆC'                 ø
+ FZNXEVAL FX 'Y½A ZNXEVAL B;I;NOTEST;IO;RHO' 'ä EVALUATES THE POLYNOMI       ø
+ ALS IN  A  AT  B  MODULO  n.' 'DERR^/(,A=¾A),(,B=¾B½((æB),1)æB),n<10000       ø
+ 000' 'EXPANDV' 'A½((õ/RHO½ý1ÇæA),ý1ÆæA)æn|A' 'Y½(æB½,n|B)æ0' 'IO½NOTES       ø
+ T½1' 'I½1+(æA)[2]' 'LOOP:¸(0òI½I-1)/END' 'Y½n|A[;I]+BõY' '¸LOOP' 'END:Y       ø
+X½RHOæY'                                                                       ø
+ FZNXFACTOR FX 'G½ZNXFACTOR F;IO;M;R;D;H;U;I;V;E;J;W;a;CNT;UD;ZNXRT;F1       ø
+ ' 'ä COMPUTES THE MONIC IRREDUCIBLE FACTORS OF AN' 'ä INTEGER POLYNOMIA       ø
+ L MODULO  n, WHICH MUST BE A' 'ä PRIME LESS THAN 1E7.  THE ALGORITHM US       ø
+ ED IS' 'ä PROBABILISTIC AND SO HAS A SMALL CHANCE OF' 'ä NOT FINDING AL       ø
+ L THE FACTORS.' 'DERR^/(n<10000000),(1=æZFACTOR n),(1=ææF),,F=¾F' 'DERR       ø
+  0óD½ý1++/ë\èFô0' 'IO½0' 'F½(D+1)Æn|FõZNINV F[D]' 'G½(0,D+1)æM½0' 'R½0       ø
+  1' 'LOOP:¸((D½ZNXDEGREE F)<2õM½M+1)/END' 'ZNXFINIT F' 'R½DÆ(F ZNXREM R       ø
+ )ZNXFPOWER n' '¸(1=æH½F ZNXGCD0 R-DÆ0 1)/LOOP' '¸(M=ý1+æH)/IRR' '¸(200>       ø
+ n*M)/SMALL' 'U½(1,æH)æH' 'LOOPA:¸(^/M=UD½ZNXDEGREE U)/ENDA' 'I½(M<UD)ì1       ø
+ ' 'ZNXFINIT F1½(1+E½UD[I])ÆU[I;]' 'CNT½0' 'LOOPA1:¸(10<CNT½CNT+1)/ENDA1       ø
+ ' 'V½í(Eæn)˜?5æn*E' '¸(n=2)/EVEN' 'V½(5,E)ÆV ZNXFPOWER(ý1+n*M)ö2' 'V½(V       ø
+ ë.ô0)ðV' 'V½(Vë.ôEÆ1)ðV' '¸(0=1ÆæV½(Vë.ôEÆn-1)ðV)/LOOPA1' 'V½V[0;]' '¸(       ø
+ 1ôæW½(V+EÆ1)ZNXGCD0 F1)/SPLIT' 'W½V ZNXGCD0 F1' '¸SPLIT' 'EVEN:J½1' 'W½       ø
+ V' 'LOOPA1A:¸(MóJ½J+1)/ENDA1A' 'W½n|W+V½V ZNXFPROD V' '¸LOOPA1A' 'ENDA1       ø
+ A:W½(Wë.ô0)ðW' '¸(0=1ÆæW½(Wë.ôEÆ1)ðW)/LOOPA1' 'W½F1 ZNXGCD0 W½W[0;]' 'S       ø
+ PLIT:U½((Iôì1ÆæU)ðU),[0]((æH)ÆW),[ý0.5](æH)ÆF1 ZNXQUOT W' '¸LOOPA' 'END       ø
+ A1:''BAD LUCK, YOU LOSE!''' '¸' 'ENDA:G½G,[0]((1ÆæU),ý1ÆæG)ÆU' 'F½F ZNX       ø
+ QUOT H' '¸(1=æH½F ZNXGCD0 H)/LOOP' 'U½((U ZNXREM H)^.=0)ðU' '¸ENDA' 'SM       ø
+ ALL:U½(í(Mæn)˜ìn*M),1' 'U½((U ZNXREM H)^.=0)ðU' '¸ENDA' 'IRR:G½G,[0](ý1       ø
+ ÆæG)ÆH' 'F½F ZNXQUOT H' 'LOOPB:W½F ZNXQUOT H' '¸(aë.ô0)/LOOP' 'G½G,[0](       ø
+ ý1ÆæG)ÆH' 'F½W' '¸LOOPB' 'END:¸(D=0)/ONE' 'G½G,[0](ý1ÆæG)ÆF' 'ONE:D½ZNX       ø
+XDEGREE,G[ý1+1ÆæG;]' 'G½((1ÆæG),D+1)ÆG'                                        ø
+ FZNXFINIT FX 'ZNXFINIT F;D;IO;I' 'ä INITIALIZES THE CURRENT QUOTIENT        ø
+ ALGEBRA OF  ZN[X].' 'ä THE VALUE OF  n  MAY NOT EXCEED 1E7.' 'IO½0' 'D       ø
+ ERR^/(n<10000000),(1=ææF),,F=¾F½n|F' 'DERR 1óD½ý1++/ë\è0ôF' 'ZNXRT½((D-       ø
+ 1),D)æn|-F½n|(DÆF)õZNINV F[D]' 'I½0' 'LOOP:¸((D-1)óI½I+1)/0' 'ZNXRT[I;]       ø
+X½n|(0,ý1ÇZNXRT[I-1;])-FõZNXRT[I-1;D-1]' '¸LOOP'                               ø
+ FZNXREM FX 'C½A ZNXREM B;a;Q' 'ä COMPUTES THE REMAINDER OF  B  MODULO        ø
+  A  IN THE' 'ä EUCLIDEAN DOMAIN OF POLYNOMIALS MOD  n, WHICH' 'ä MUST B       ø
+XE A PRIME SMALLER THAN 1E7.' 'Q½B ZNXQUOT A' 'C½a'                            ø
+ FZNXFPOWER FX 'C½A ZNXFPOWER B;D;E;RHO;R;I;J' 'ä COMPUTES POWERS IN TH       ø
+ E CURRENT QUOTIENT ALGEBRA' 'ä OF THE RING OF POLYNOMIALS OVER THE INTE       ø
+ GERS' 'ä MODULO  n.  THE ENTRIES IN  B  MUST BE NONNEGATIVE' 'ä INTEGER       ø
+ S.' 'DERR^/(,B=¾B),,Bò0' 'B½((æB),1)æB' 'EXPANDV' '¸((D½ý1ÆæZNXRT)òE½ý1       ø
+ ÆæA)/OK' '¸(E>ý1+2õD)/DERR' 'A½n|(((ý1ÇæA),D)ÆA)+(((-ææA)ÆD)ÇA)+.õ((E-D       ø
+ ),D)ÆZNXRT' 'OK:A½((RHO½ý1ÇæA),D)ÆA' 'A½((R½õ/RHO),D)æA' 'C½(æA)æDÆ1' '       ø
+ I½(B>0)/ìæB½,B' 'LOOP:C[J;]½((æJ),D)ÆC[J;]ZNXFPROD A[J½(2|B[I])/I;]' '¸       ø
+ (0=æI½(B[I]ò2)/I)/END' 'A[I;]½((æI),D)ÆA[I;]ZNXFPROD A[I;]' 'B[I]½¾B[I]       ø
+Xö2' '¸LOOP' 'END:D½1©+/ë\èëð((õ/ý1ÇæC),D)æCô0' 'C½(RHO,D)æ(R,D)ÆC'            ø
+ FZNXGCD0 FX 'C½A ZNXGCD0 B;M;R;RHO;I;T;D;LCI' 'ä COMPUTES GCD''S OF IN       ø
+ TEGER POLYNOMIALS MODULO' 'ä n  WITH A MINIMUM OF CHECKING AND WITHOUT'       ø
+  'ä EXPRESSING THE RESULT AS A LINEAR COMBINATION' 'ä OF THE ARGUMENTS.       ø
+ ' 'DERR^/(n<10000000),(1=æZFACTOR n),(,A=¾A),,B=¾B' 'EXPANDV' 'M½1©+/ë\       ø
+ èëð0ô((õ/ý1ÇæA),ý1ÆæA)æA½n|A' 'M½M©+/ë\èëð0ô((õ/ý1ÇæB),ý1ÆæB)æB½n|B' 'R       ø
+ ½õ/RHO½ý1ÇæA' 'A½(R,M)æ(RHO,M)ÆA' 'B½(R,M)æ(RHO,M)ÆB' 'I½ìR' 'LOOP:¸(0=       ø
+ æI½(ë/B[I;]ô0)/I)/END' 'T½((æI),M)ÆB[I;]ZNXREM A[I;]' 'A[I;]½B[I;]' 'B[       ø
+ I;]½T' '¸LOOP' 'END:D½1©+/ë\èëð0ôA' 'LCI½ZNINV(RHO,1)æZNXLEAD C½(RHO,D)       ø
+Xæ(R,D)ÆA' 'C½C ZNXPROD LCI'                                                   ø
+ FZNXFPROD FX 'C½A ZNXFPROD B;D;E' 'ä COMPUTE THE PRODUCT OF TWO ARRAYS       ø
+  OVER THE' 'ä CURRENT QUOTIENT ALGEBRA OF THE RING OF POLYNOMIALS' 'ä O       ø
+ VER THE INTEGERS MODULO  n.' 'C½n|(n|A)ZXPROD n|B' 'DERR(D½ý1ÆæC)ó+/æZN       ø
+ XRT' '¸(DóE½ý1ÆæZNXRT)/0' 'C½n|(((ý1ÇæC),E)ÆC)+(((-ææC)ÆE)ÇC)+.õ((D-E),       ø
+XE)ÆZNXRT' 'D½1©+/ë\èëð((õ/ý1ÇæC),E)æCô0' 'C½((ý1ÇæC),D)ÆC'                    ø
+ FZNXLEAD FX 'C½ZNXLEAD A;IO;D;RHO;I;R' 'ä COMPUTES THE ARRAY OF LEADI       ø
+ NG COEFFICIENTS OF AN' 'ä ARRAY OF INTEGER POLYNOMIALS MODULO  n.' 'IO       ø
+ ½0' '¸NOTEST/BEGIN' 'DERR^/,A=¾A' '¸(0ôææA½n|A)/BEGIN' 'A½,A' 'BEGIN:RH       ø
+ O½ý1ÇæA' 'D½,ý1++/ë\è0ôA' 'I½(Dò0)/ìR½õ/RHO' 'C½Ræ1' 'C[I]½(,A)[D[I]+(ý       ø
+X1ÆæA)õI]' 'C½RHOæC'                                                           ø
+ FZNXFCLEAR FX 'ZNXFCLEAR;I' 'ä EXPUNGES THE VARIABLE ZNXRT DESCRIBING        ø
+XTHE CURRENT' 'ä QUOTIENT ALGEBRA OF ZN[X].' 'I½EX ''ZNXRT'''                 ø
+ FZNXFDIFF FX 'C½A ZNXFDIFF B' 'ä COMPUTES THE DIFFERENCE OF TWO ARRAYS       ø
+X IN THE' 'ä CURRENT QUOTIENT ALGEBRA OF  ZN[X].' 'C½A ZNXFSUM-B'              ø
+ FZNXFSUM FX 'C½A ZNXFSUM B;D;E' 'ä COMPUTES THE SUM OF TWO ARRAYS OVER       ø
+  THE CURRENT' 'ä QUOTIENT ALGEBRA OF THE RING OF POLYNOMIALS' 'ä OVER T       ø
+ HE INTEGERS MODULO  n.' 'D½ý1ÆæC½A ZNXSUM B' 'DERR Dó+/æZNXRT' '¸(DóE½ý       ø
+ 1ÆæZNXRT)/0' 'C½n|(((ý1ÇæC),E)ÆC)+(((-ææC)ÆE)ÇC)+.õ((D-E),E)ÆZNXRT' 'D½       ø
+X1©+/ë\èëð((õ/ý1ÇæC),E)æCô0' 'C½((ý1ÇæC),D)ÆC'                                 ø
+ FZNXFINV FX 'r½ZNXFINV A;s;D;E' 'ä COMPUTES INVERSES IN THE CURRENT QU       ø
+ OTIENT' 'ä ALGEBRA OF  ZN[X].  n  MUST BE PRIME.' 'DERR(ý1ÆæA)óE½ý1ÆæZN       ø
+ XRT' '¸(E=1)/SMALL' 'D½A ZNXGCD(-ZNXRT[IO;]),1' 'DERR^/(,D=1),1=ý1ÆæD'       ø
+X '¸0' 'SMALL:r½ZNINV A'                                                       ø
+ FZNXGCD FX 'C½A ZNXGCD B;IO;M;RHO;F;U;V;I;Q;T;D;LCI;a;R' 'ä COMPUTES        ø
+ THE GCD OF TWO ARRAYS OF INTEGER' 'ä POLYNOMIALS MODULO  n, WHICH MUST        ø
+ BE A PRIME' 'ä LESS THAN 1E7.  THE RESULT  C  IS WRITTEN' 'ä IN THE FOR       ø
+ M  (r ZNXPROD A) ZNXSUM s ZNXPROD B.' 'DERR^/(n<10000000),(1=æZFACTOR n       ø
+ ),(,A=¾A),,B=¾B' 'IO½1' 'EXPANDV' 'M½1©+/ë\èëð0ô((õ/ý1ÇæA),ý1ÆæA)æA½n|       ø
+ A' 'M½M©+/ë\èëð0ô((õ/ý1ÇæB),ý1ÆæB)æB½n|B' 'R½õ/RHO½ý1ÇæA' 'A½(R,M)æ(RHO       ø
+ ,M)ÆA' 'B½(R,M)æ(RHO,M)ÆB' 'U½((æA)æMÆ1),[1]((æA)æ0),[0.5]A' 'V½((æB)æ0       ø
+ ),[1]((æB)æMÆ1),[0.5]B' 'I½ìR' 'LOOP:¸(0=æI½(ë/V[3;I;]ô0)/I)/END' 'Q½((       ø
+ æI),M)ÆU[3;I;]ZNXQUOT V[3;I;]' 'T½(3,(æI),M)ÆU[;I;]ZNXDIFF V[;I;]ZNXPRO       ø
+ D(3,æQ)æQ' 'U[;I;]½V[;I;]' 'V[;I;]½T' '¸LOOP' 'END:D½1©+/ë\èëð0ôU[3;;]'       ø
+  'LCI½ZNINV(RHO,1)æZNXLEAD C½(RHO,D)æ(R,D)ÆU[3;;]' 'C½C ZNXPROD LCI' 'D       ø
+ ½1©+/ë\èëð0ôU[1;;]' 'r½LCI ZNXPROD(RHO,D)æ(R,D)ÆU[1;;]' 'D½1©+/ë\èëð0ôU       ø
+X[2;;]' 's½LCI ZNXPROD(RHO,D)æ(R,D)ÆU[2;;]'                                    ø
+ FZNXIRRED FX 'A½ZNXIRRED M;IO;I;F;J;C' 'ä COMPUTES A MATRIX LISTING T       ø
+ HE MONIC IRREDUCIBLE' 'ä POLYNOMIALS OF DEGREE AT MOST  M OVER THE INTE       ø
+ GERS' 'ä MODULO  n, WHICH MUST BE A PRIME LESS THAN  1E7.' 'DERR^/(n<10       ø
+ 000000),(1=æZFACTOR n),1óM' 'IO½0' 'A½(0,M+1)æ0' 'I½ì1ÆæC½ZNXMONIC M'        ø
+ 'LOOP:A½A,[0]F½C[J½+/1ÆI;]' 'I½1ÇI' '¸(M<2õZXDEGREE F)/END' 'I½(ë/0ôF Z       ø
+XNXREM C[I;])/I' '¸LOOP' 'END:A½A,[0]C[I;]'                                    ø
+ FZNXMONIC FX 'A½ZNXMONIC M;IO;Q;I' 'ä COMPUTES A MATRIX LISTING THE M       ø
+ ONIC POLYNOMIALS' 'ä OF DEGREE AT MOST  M  OVER THE INTEGERS MODULO  n.       ø
+ ' 'IO½0' 'DERR^/(1=æM),(,M=¾M),,0<M½,M' 'Q½1' 'A½ìI½0' 'LOOP:¸(M<I½I+1       ø
+X)/ENCODE' 'A½A,Q+ìQ½Qõn' '¸LOOP' 'ENCODE:A½èí((M+1)æn)˜A'                     ø
+ FZNXMATINV FX 'C½ZNXMATINV A;IO;B;r;v' 'ä COMPUTES THE INVERSE OF A S       ø
+ QUARE MATRIX  OVER  ZN[X].' 'DERR^/(3=ææA),=/ý1ÇæA' 'IO½1' 'B½ZNXROWRE       ø
+XDUCE A' 'DERR^/,(1 1 2íB)=(æB)[1 3]æ(ý1ÆæB)Æ1' 'C½r'                          ø
+ FZNXROWREDUCE FX 'B½ZNXROWREDUCE A;IO;I;J;K;L;C;D;M;a' 'ä ROW REDUCES        ø
+ A MATRIX OF POLYNOMIALS IN  ZN[X].' 'ä n MUST BE A PRIME.  PRODUCES AN        ø
+ INVERTIBLE MATRIX  r' 'ä OF POLYNOMIALS SUCH THAT  B  IS  r ZNXMATPROD        ø
+ A.' 'ä THE VECTOR  v  LISTS THE CORNER ENTRIES OF  B.' 'DERR^/(1=æZFACT       ø
+ OR n),(3=ææA),,A=¾A' 'B½n|A' 'IO½IO' 'IO½1' 'v½ì0' 'r½(K,K,1)æ1,(K½1Æ       ø
+ æB)æI½J½0' 'LOOP:¸((Jò1ÆæB)ë(æB)[2]<I½I+1)/END' 'BACK:¸(0=æD½(Cò0)/C½ZN       ø
+ XDEGREE(J,0)ÇB[;I;])/LOOP' 'K½J+Cì¾/D' 'C½B[;I;]ZNXQUOT B[K;I;]' 'C[K;]       ø
+ ½0' 'D½2 1 3í((æB)[2],æC)æC' 'B½B ZNXDIFF D ZNXPROD(æB)æB[K;;]' 'D½2 1        ø
+ 3í((ær)[2],æC)æC' 'r½r ZNXDIFF D ZNXPROD(ær)ær[K;;]' '¸(1<+/ë/0ô(J,0)ÇB       ø
+ [;I;])/BACK' 'v½v,I' 'B[J,K;;]½B[K,J½J+1;;]' 'r[J,K;;]½r[K,J;;]' 'B[J;;       ø
+ ]½n|B[J;;]õM½ZNINV ZNXLEAD B[J;I;]' 'r[J;;]½n|r[J;;]õM' '¸LOOP' 'END:v½       ø
+Xv-1-IO½IO'                                                                   ø
+ FZNXMATPROD FX 'C½A ZNXMATPROD B;IO;M;X;AX;BX;RR;RA;RB' 'ä COMPUTES T       ø
+ HE MATRIX PRODUCT OF TWO NONSCALAR ARRAYS' 'ä OF INTEGER POLYNOMIALS MO       ø
+ DULO n.' 'IO½1' 'DERR^/(2ó(ææA),ææB),((æA)[ý1+ææA]=M½1ÆæB)' 'C½((RA½ý2       ø
+ ÇæA),(RB½ý1Ç1ÇæB),1)æ0' 'X½1=ìM' 'RR½((æRA)+ìæRB),(ìæRA),ææC' 'LOOP:AX½       ø
+ RRí(RB,RA,ý1ÆæA)æX/[ý1+ææA]A' 'BX½((ý1ÇæC),ý1ÆæB)æXðB' 'C½C ZNXSUM AX Z       ø
+XNXPROD BX' '¸(~1ÆX½ý1èX)/LOOP'                                                ø
+ FZNXPRODRED FX 'C½ZNXPRODRED A;IO;RHO;D;E;CC;L;M' 'ä COMPUTES THE PRO       ø
+ DUCT REDUCTION ALONG THE LAST' 'ä AXIS OF AN ARRAY OF POLYNOMIALS OVER        ø
+ THE INTEGERS' 'ä MODULO  n, WHICH MUST NOT EXCEED 1E7.' '¸(1òææC½A)/0'        ø
+ 'IO½1' 'L½õ/RHO½ý2ÇæC' 'C½(L,ý2ÆæC)æC' '¸(0=(æC)[2])/ZERO' 'LOOP:¸(1=D       ø
+ ½(æC)[2])/ONE' 'CC½((L,E,ý1ÆæC)ÆC)ZNXPROD(L,(-E½¾Dö2),ý1ÆæC)ÆC' '¸(Dô2õ       ø
+ E)/ODD' 'C½CC' '¸LOOP' 'ODD:M½(+/ë\èëð0ôC[;E+1;])©ý1ÆæCC' 'C½((L,M)ÆC[;       ø
+ E+1;]),[2]((ý1ÇæCC),M)ÆCC' '¸LOOP' 'ONE:C½(RHO,ý1ÆæC)æC' '¸0' 'ZERO:C½(       ø
+XRHO,1)æ1'                                                                     ø
+ FZNXREDUCE FX 'B½ZNXREDUCE A;IO;I;J;K;L;M;N;Q;E;D;Y;Z;U;V;X;a' 'ä RED       ø
+ UCES A MATRIX OF POLYNOMIALS IN  ZN[X]  USING' 'ä ROW AND COLUMN OPERAT       ø
+ IONS.  PRODUCES  MATRICES  r' 'ä AND  s  SUCH THAT  B  IS THE MATRIX PR       ø
+ ODUCT OF' 'ä r,  A  AND  s.   n  MUST BE A PRIME.' 'DERR^/(1=æZFACTOR n       ø
+ ),(3=ææA),,A=¾A' 'B½n|A' 'IO½0' 'r½(K,K,1)æ1,(K½1ÆæB)æ0' 's½(L,L,1)æ1,       ø
+ (L½(æB)[1])æ0' 'I½ý1' 'LOOPI:¸(^/ý1=D½,ZNXDEGREE((I,I½I+1),0)ÇB)/CLEANU       ø
+ P' 'V½I+((2ÆæB)-I)˜Dì¾/(Dò0)/D' 'X½B[J½V[0];K½V[1];]' 'COL:¸(^/ý1=D½ZNX       ø
+ DEGREE X ZNXREM B[;K;])/ROW' 'L½Dì¾/(Dò0)/D' 'Q½B[L;K;]ZNXQUOT X' 'E½Q        ø
+ ZNXPROD B[J;;]' 'B½((ý1ÇæB),(ý1ÆæB)©ý1ÆæE)ÆB' 'B[L;;]½n|B[L;;]-(1ÇæB)ÆE       ø
+ ' 'E½Q ZNXPROD r[J;;]' 'r½((ý1Çær),(ý1Æær)©ý1ÆæE)Ær' 'r[L;;]½n|r[L;;]-(       ø
+ 1Çær)ÆE' 'X½B[J½L;K;]' '¸COL' 'ROW:¸(^/ý1=D½ZNXDEGREE X ZNXREM B[J;;])/       ø
+ GENERAL' 'M½Dì¾/(Dò0)/D' 'Q½B[J;M;]ZNXQUOT X' 'E½Q ZNXPROD B[;M;]' 'B½(       ø
+ (ý1ÇæB),(ý1ÆæB)©ý1ÆæE)ÆB' 'B[;M;]½n|B[;M;]-(æB)[0 2]ÆE' 'E½Q ZNXPROD s[       ø
+ ;M;]' 'S½((ý1Çæs),(ý1Ææs)©ý1ÆæE)Æs' 's[;M;]½n|s[;M;]-(æs)[0 2]ÆE' 'X½B[       ø
+ J;K½M;]' '¸COL' 'GENERAL:¸(^/ý1=D½,ZNXDEGREE X ZNXREM(I,I,0)ÇB)/END' 'V       ø
+ ½I+((2ÆæB)-I)˜Dì¾/(Dò0)/D' 'Q½B[L½V[0];K;]ZNXQUOT X' 'E½Q ZNXPROD B[J;;       ø
+ ]' 'B½((ý1ÇæB),(ý1ÆæB)©ý1ÆæE)ÆB' 'B[L;;]½n|B[L;;]-(1ÇæB)ÆE' 'E½Q ZNXPRO       ø
+ D r[J;;]' 'r½((ý1Çær),(ý1Æær)©ý1ÆæE)Ær' 'r[L;;]½n|r[L;;]-(1Çær)ÆE' 'Q½B       ø
+ [L;M½V[1];]ZNXQUOT X' 'E½Q ZNXPROD B[;K;]' 'B½((ý1ÇæB),(ý1ÆæB)©ý1ÆæE)ÆB       ø
+ ' 'B[;M;]½n|B[;M;]-(æB)[0 2]ÆE' 'E½Q ZNXPROD s[;K;]' 's½((ý1Çæs),(ý1Ææs       ø
+ )©ý1ÆæE)Æs' 's[;M;]½n|s[;M;]-(æs)[0 2]ÆE' 'X½B[J½L;K½M;]' '¸COL' 'END:B       ø
+ [I,J;;]½B[J,I;;]' 'r[I,J;;]½r[J,I;;]' 'B[;I,K;]½B[;K,I;]' 's[;I,K;]½s[;       ø
+ K,I;]' 'B[I;;]½n|B[I;;]õU½ZNINV ZNXLEAD X' 'r[I;;]½n|r[I;;]õU' 'Q½B[Y½(       ø
+ I+1)Çì1ÆæB;I;]ZNXQUOT B[I;I;]' 'E½(1 0 2í((æB)[1],æQ)æQ)ZNXPROD((1ÆæQ),       ø
+ 1ÇæB)æB[I;;]' 'B½((ý1ÇæB),(ý1ÆæB)©ý1ÆæE)ÆB' 'B[Y;;]½n|B[Y;;]-((æY),1ÇæB       ø
+ )ÆE' 'E½(1 0 2í((ær)[1],æQ)æQ)ZNXPROD((1ÆæQ),1Çær)ær[I;;]' 'r½((ý1Çær),       ø
+ (ý1Æær)©ý1ÆæE)Ær' 'r[Y;;]½n|r[Y;;]-((æY),1Çær)ÆE' 'Q½B[I;Z½(I+1)Çì(æB)[       ø
+ 1];]ZNXQUOT B[I;I;]' 'B[I;Z;]½0' 'E½(1 0 2í((1ÆæQ),(æs)[0 2])æs[;I;])ZN       ø
+ XPROD((1Ææs),æQ)æQ' 's½((ý1Çæs),(ý1Ææs)©ý1ÆæE)Æs' 's[;Z;]½n|s[;Z;]-((1Æ       ø
+ æs),(æZ),ý1Ææs)ÆE' '¸LOOPI' 'CLEANUP:D½1©+/ë\èëðëð0ôB' 'B½((ý1ÇæB),D)ÆB       ø
+ ' 'D½1©+/ë\èëðëð0ôr' 'r½((ý1Çær),D)Ær' 'D½1©+/ë\èëðëð0ôs' 's½((ý1Çæs),D       ø
+X)Æs'                                                                          ø
+ FZPRIMES FX 'P½ZPRIMES N;IO;Q;R' 'ä LISTS THE PRIMES UP TO N.' 'IO½0       ø
+ ' 'DERR 1=æN½,N' 'P½(NòP)/P½2 3 5 7 11 13 17 19' '¸(Nó22)/0' 'Q½,(30õì©       ø
+ Nö30)ø.+7 11 13 17 19 23 29 31' 'Q½(^ð0ô7 11 13 17 19ø.|Q)/Q' 'LOOP:¸((       ø
+ 0=æQ)ëN<(1ÆQ)*2)/END' 'P½P,R½(5¾æQ)ÆQ' 'Q½(^ð0ôRø.|Q)/Q' '¸LOOP' 'END:P       ø
+X½(NòP)/P½P,Q'                                                                 ø
+ FZREM FX 'C½A ZREM B' 'ä COMPUTES THE REMAINDER WHEN  B  IS DIVIDED BY       ø
+   A.' 'äBOTH ARRAYS MUST BE INTEGER.' '¸NOTEST/BEGIN' 'DERR^/(,A=¾A),,B       ø
+X=¾B' 'BEGIN:C½(|A)|B'                                                         ø
