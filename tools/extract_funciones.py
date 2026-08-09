@@ -1,34 +1,34 @@
- import subprocess
- import os
- import re
+import subprocess
+import os
+import re
  
- # Define file paths
- input_file = "../apl/funciones.txt"
- output_file = "../apl/contenido_funciones.txt"
+# Define file paths
+input_file = "../apl/funciones.txt"
+output_file = "../apl/contenido_funciones.txt"
  
- # Regex pattern to match all types of ANSI escape sequences (colors, line clears)
- ansi_escape_pattern = re.compile(r'\x1B(?:[@-Z\\-_]|\[[0-?]*[ -/]*[@-~])')
+# Regex pattern to match all types of ANSI escape sequences (colors, line clears)
+ansi_escape_pattern = re.compile(r'\x1B(?:[@-Z\\-_]|\[[0-?]*[ -/]*[@-~])')
  
- # 1. Read and parse function names from funciones.txt
- if not os.path.exists(input_file):
+# 1. Read and parse function names from funciones.txt
+if not os.path.exists(input_file):
      print(f"Error: {input_file} not found. Please make sure it exists.")
      exit(1)
  
- with open(input_file, "r", encoding="utf-8") as f:
+with open(input_file, "r", encoding="utf-8") as f:
      raw_content = f.read()
  
- # Split by spaces/newlines and filter out any empty strings
- function_names = [name.strip() for name in raw_content.split() if name.strip()]
+# Split by spaces/newlines and filter out any empty strings
+function_names = [name.strip() for name in raw_content.split() if name.strip()]
  
- print(f"Found {len(function_names)} functions to extract. Starting processing...")
+print(f"Found {len(function_names)} functions to extract. Starting processing...")
  
- # 2. Iterate through each function name and query GNU APL
- with open(output_file, "w", encoding="utf-8") as out:
+# 2. Iterate through each function name and query GNU APL
+with open(output_file, "w", encoding="utf-8") as out:
      for idx, fn_name in enumerate(function_names, start=1):
          print(f"[{idx}/{len(function_names)}] Extracting: {fn_name}...")
  
          # Prepare the exact sequence of commands for GNU APL
-         apl_commands = f")IN ./classlib.atf\n⎕←⎕CR '{fn_name}'\n)OFF\n"
+         apl_commands = f")IN ../apl/classlib.atf\n⎕←⎕CR '{fn_name}'\n)OFF\n"
  
          # Kept the exact same working flags from your successful test
          process = subprocess.Popen(

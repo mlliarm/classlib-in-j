@@ -62,4 +62,3 @@ with open(output_file, "w", encoding="utf-8") as out:
     out.writelines(processed_lines)
 
 print(f"Success! Delimiters added cleanly. File saved inside the folder as '{output_file}'.")
-
