@@ -41,6 +41,12 @@ After that, using the `Alt` key you'll be able to select the APL characters base
 
 **Caution**: say bye bye to `Alt+Tab` window rotation after applying the above command. You'll have to use a different key for that.
 
+Now load the library `classlib.atf` and have fun:
+
+```apl
+)IN ./apl/classlib.atf
+```
+
 ### Function names
 
 After that, running the following code in my GNU/Linux environment calling the GNU APL binary printed the names of the functions in a txt file named `funciones.txt`:
@@ -115,16 +121,16 @@ print(f"Finished! All function contents have been saved cleanly to '{output_file
 
 ### Folder `apl/`
 
-- For the function names check: `funciones.txt`
+- `funciones.txt`: contains the names of all the 227 functions.
 
-- For the function definitions check: `contenido-funciones.txt`
+- `contenido-funciones.txt`: contains the definitions of all the functions.
 
-- For the function definitions with APL syntax highlight check: `contenido-funciones.apl`
+- `contenido-funciones.apl`: contains the syntax highlighted definitions of all the functions.
 
-- For the original file that I extracted the functions, should you want to load it in GNU APL with `)IN ./classlib.atf`: `classlib.atf`
+- `classlib.atf`: the original ATF file that contains all the functions. You need to use that if you want to use APL with Sim's book.
 
 ### Folder `j/`
 
-Where the J translation of the APL code is.
+Where the J translation of the APL code will be.
 
 Ongoing work.
