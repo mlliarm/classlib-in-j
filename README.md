@@ -132,8 +132,7 @@ TBD
 - `contenido_funciones_with_del.apl`: contains the syntax highlighted definitions of all the functions in edit mode.
 - `classlib.atf`: the original ATF file that contains all the functions. You need to use that if you want to use APL with Sim's book.
 - `examples0.apl`: the examples shared for the book in unsolved problems. Extracted from `classlib0/examples0.atf`.
-- `classlib0/`: the original code set.
-- `classlib0.zip`: the original code set zipped.
+- `classlib0/`: the original code set files (zipped and unzipped).
 
 ### Folder `j/`
 
