@@ -11,7 +11,7 @@ Got the `apl/classlib.atf` file that contains all the functions from [this repos
 
 ### GNU APL 2.0
 
-I've built localy [GNU APL 2.0](https://ftp.gnu.org/gnu/apl/) in order to read the classlib.atf file. If you're a Dyalog APL user, you can use that too.
+I've built localy [GNU APL 2.0](https://ftp.gnu.org/gnu/apl/) in order to read the classlib.atf file. I've named the binary `apl-2.0` to remember the version. If you're a Dyalog APL user, you can use that too.
 
 If you want to play with the `classlib.atf` library with GNU APL 2.0 and follow Sim's book with APL you'll need to install an APL keyset on your OS.
 
@@ -49,6 +49,8 @@ Now load the library `classlib.atf` and have fun:
 )IN ./apl/classlib.atf
 ```
 
+
+
 ### Function names
 
 After that, running the following code in my GNU/Linux environment calling the GNU APL binary printed the names of the functions in a txt file named `funciones.txt`:
@@ -70,6 +72,30 @@ As we know, in edit mode the header of the function starts with `∇` and the la
 
 For this reason with the help of Gemini we created a [second python script](./tools/wrap_del.py) that added in the start and the end of the functions
 the `∇` character, so it's better visible that this is the definition of a function. You can find the corresponding files [here in TXT](./apl/contenido_funciones_with_del.txt) and [here in APL highlighted syntax](./apl/contenido_funciones_with_del.apl).
+
+## Original code
+
+I've reached out to a user from [nars2000](https://www.tapatalk.com/groups/nars2000/) discussion group and got the [original code](apl/classlib0/) shared by Sims.
+
+### Classlib
+
+The Classlib version I got from Angeldude lies inside `apl/`. The original version lies inside `apl/classlib0.atf`. The program `diff` says that the binaries differ.
+
+### Examples
+
+Within that code there were the examples. Now the trick is that `apl/examples0.atf` crashes when one tries to `)IN` from GNU APL, because Sims used a different type of APL, probably IBM APL 2. With the help of Claude I managed to create `apl/examples.apl` that has the instructions of all the examples. You can load all the commands either by hand, or in a new APL session with the command:
+
+```bash
+apl-2.0 -f ./apl/examples0.apl
+```
+
+### Solutions
+
+In the archive there were also some solutions. You can find them in `apl/classlib0/solutions0.atf`.
+
+### Clbutil
+
+A few util functions. Can be found in `apl/classlib0/clbutil0.atf`.
 
 ## Use
 
@@ -105,6 +131,8 @@ TBD
 - `contenido_funciones_with_del.txt`: contains the definitions of all the functions in edit mode.
 - `contenido_funciones_with_del.apl`: contains the syntax highlighted definitions of all the functions in edit mode.
 - `classlib.atf`: the original ATF file that contains all the functions. You need to use that if you want to use APL with Sim's book.
+- `examples0.apl`: the examples shared for the book in unsolved problems. Extracted from `classlib0/examples0.atf`.
+- `classlib0/`: the original code set.
 
 ### Folder `j/`
 
