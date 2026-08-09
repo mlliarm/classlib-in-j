@@ -141,3 +141,8 @@ TBD
 Where the J translation of the APL code will be.
 
 Ongoing work.
+
+### Folder `tools/`
+
+- `extract_funciones.py`: python script to extract the definitions for each function and save them into `apl/contenido_funciones.txt`.
+- `wrap_del.py`: python script to add the `∇` character at the begining and the end of each function, and save them into `apl/contenido_funciones_with_del.txt`.
