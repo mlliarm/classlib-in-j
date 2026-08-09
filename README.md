@@ -5,7 +5,7 @@ A translation of Charles Sims' CLASSLIB APL library into J.
 
 This was the library Charles C. Sims wrote and used in his seminal ['Abstract Algebra: A Computational Approach'](https://dl.acm.org/doi/abs/10.5555/781) book.
 
-Got the *.atf functions from [this repository](https://github.com/Angeldude/classlib) of @Angeldude. Thanks.
+Got the `apl/classlib.atf` file that contains all the functions from [this repository](https://github.com/Angeldude/classlib) by @Angeldude. Thanks.
 
 ## Extraction
 
