@@ -79,7 +79,7 @@ I've reached out to a user from [nars2000](https://www.tapatalk.com/groups/nars2
 
 ### Classlib
 
-The Classlib version I got from Angeldude lies inside `apl/`. The original version lies inside `apl/classlib0.atf`. The program `diff` says that the binaries differ.
+The Classlib version I got from Angeldude lies inside `apl/`. The original version lies inside `apl/classlib0/`. The program `diff` says that the binaries differ.
 
 ### Examples
 
