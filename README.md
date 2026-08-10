@@ -1,5 +1,5 @@
-# classlib-in-j
-A port of prof. Charles C. Sims' CLASSLIB APL library into J.
+# classlib-in-x
+A port of prof. Charles C. Sims' CLASSLIB APL library into language X.
 
 *Note:* For now only the full APL code is available, along with instructions of use. 
 
@@ -117,7 +117,7 @@ To use CLASSLIB with APL, import the library `classlib.atp` as follows:
 
 Have fun !
 
-### J
+### X=J
 
 TBD
 
