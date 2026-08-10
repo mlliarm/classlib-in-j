@@ -1,11 +1,11 @@
 # classlib-in-j
-A port of Charles Sims' CLASSLIB APL library into J.
+A port of prof. Charles C. Sims' CLASSLIB APL library into J.
 
 *Note:* For now only the full APL code is available, along with instructions of use. 
 
 ## CLASSLIB
 
-This was the library Charles C. Sims wrote and used in his seminal ['Abstract Algebra: A Computational Approach'](https://dl.acm.org/doi/abs/10.5555/781) book.
+This was the library prof. Charles C. Sims wrote and used in his seminal ['Abstract Algebra: A Computational Approach'](https://dl.acm.org/doi/abs/10.5555/781) book.
 
 Got the `apl/classlib.atf` file that contains all the functions from [this repository](https://github.com/Angeldude/classlib) by @Angeldude. Thanks.
 
@@ -51,8 +51,6 @@ Now load the library `classlib.atf` and have fun:
 )IN ./apl/classlib.atf
 ```
 
-
-
 ### Function names
 
 After that, running the following code in my GNU/Linux environment calling the GNU APL binary printed the names of the functions in a txt file named `funciones.txt`:
@@ -77,11 +75,11 @@ the `∇` character, so it's better visible that this is the definition of a fun
 
 ## Original code
 
-I've reached out to a user from [nars2000](https://www.tapatalk.com/groups/nars2000/) discussion group and got the [original code](apl/classlib0/) shared by Sims.
+Please read first the last section, `Provenance` regarding its origin.
 
 ### Classlib
 
-The Classlib version I got from Angeldude lies inside `apl/`. The original version lies inside `apl/classlib0/`. The program `diff` says that the binaries differ.
+The Classlib version I got from Angeldude lies inside `apl/`. The original (professor's) version lies inside `apl/classlib0/`. The program `diff` says that the binaries differ. So far I've only tested partially the first version.
 
 ### Examples
 
@@ -134,7 +132,7 @@ TBD
 - `contenido_funciones_with_del.apl`: contains the syntax highlighted definitions of all the functions in edit mode.
 - `classlib.atf`: the original ATF file that contains all the functions. You need to use that if you want to use APL with Sim's book.
 - `examples0.apl`: the examples shared for the book in unsolved problems. Extracted from `classlib0/examples0.atf`.
-- `classlib0/`: the original code set files (zipped and unzipped).
+- `classlib0/`: the original (professor's) code set files (zipped and unzipped).
 
 ### Folder `j/`
 
@@ -146,3 +144,13 @@ Ongoing work.
 
 - `extract_funciones.py`: python script to extract the definitions for each function and save them into `apl/contenido_funciones.txt`.
 - `wrap_del.py`: python script to add the `∇` character at the begining and the end of each function, and save them into `apl/contenido_funciones_with_del.txt`.
+
+## Provenance
+
+The original APL source files (`classlib0.atf`, `examples0.atf`, `solutions0.atf`, `clbutil0.atf`) originate from Charles C. Sims (1937–2017), professor of mathematics at Rutgers University, who wrote CLASSLIB to accompany his book *Abstract Algebra: A Computational Approach*.
+
+According to [a 2020 post on the NARS2000 forum](https://www.tapatalk.com/groups/nars2000/viewtopic.php?p=2080#p2080) by user `dougt719` ("Doug"), Doug held an email from Professor Sims stating that CLASSLIB could be posted on the Internet with no restrictions. Doug shared the files with the NARS2000 forum's maintainer, Bob Smith, for possible inclusion with the NARS2000 APL interpreter. See [the original thread](https://www.tapatalk.com/groups/nars2000/apl-abstract-algebra-library-classlib-t640.html).
+
+The copy of the files in this repository was obtained directly from Bob Smith, the forum's maintainer and the recipient of the files from Doug; he is not himself the source of Sims' stated permission.
+
+This repository has not independently verified the original Sims → Doug email. If you have a copy of that correspondence, or are able to confirm its contents, please open an issue.
