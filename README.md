@@ -133,6 +133,7 @@ TBD
 - `classlib.atf`: the original ATF file that contains all the functions. You need to use that if you want to use APL with Sim's book.
 - `examples0.apl`: the examples shared for the book in unsolved problems. Extracted from `classlib0/examples0.atf`.
 - `classlib0/`: the original (professor's) code set files (zipped and unzipped).
+- `classlib0/LICENCE-CLASSLIB.md`: transparency note and disclaimer regarding professor's code.
 
 ### Folder `j/`
 
