@@ -1,11 +1,17 @@
 # Notice Regarding Original CLASSLIB Source
 
-This notice applies **only** to the files under `apl/classlib0/` and
-related original APL source files (`classlib0.atf`, `examples0.atf`,
-`solutions0.atf`, `clbutil0.atf`) — that is, the code originally
-written by Charles C. Sims. It does **not** apply to this repository's
-own tooling, extraction scripts, or translations, which are released
-separately under the `Unlicense` (see `LICENSE`).
+This notice applies to all files originally authored by Charles C.
+Sims, including the original ATF files (`classlib.atf`,`classlib0.atf`,
+`examples0.atf`, `solutions0.atf`, `clbutil0.atf`) and any files
+derived from them by extraction, reformatting, or transcoding without
+substantive reauthoring — including `funciones.txt`,
+`contenido_funciones.txt`, `contenido_funciones.apl`,
+`contenido_funciones_with_del.txt`, `contenido_funciones_with_del.apl`,
+and `examples0.apl`. It does **not** apply to this repository's own
+extraction/tooling scripts (e.g. `extract_funciones.py`,
+`wrap_del.py`), nor to genuine reimplementations/translations in other
+languages, which are released separately under the `Unlicense` (see
+`LICENSE`).
 
 ## Authorship
 
