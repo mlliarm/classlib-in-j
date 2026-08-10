@@ -117,7 +117,7 @@ To use CLASSLIB with APL, import the library `classlib.atp` as follows:
 
 Have fun !
 
-### X=J
+### X=j
 
 TBD
 
