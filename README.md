@@ -66,7 +66,7 @@ Then I wanted to extract the APL code per function without having to read all th
 It was hard to do it with a bash & APL code so with Gemini we created [this python script](./tools/extract_funciones.py) which saved inside
 the [TXT](./apl/contenido_funciones.txt) file the definitions. A syntax highlighted version of that is the [APL](./apl/contenido_funciones.apl) file.
 
-A catch here: because `⎕←⎕CR← 'FUNCTION_NAME'` returns the function content as it is, one might want to see how it looks in edit mode.
+A catch here: because `⎕←⎕CR 'FUNCTION_NAME'` returns the function content as it is, one might want to see how it looks in edit mode.
 
 As we know, in edit mode the header of the function starts with `∇` and the last line of the function is `∇`.
 
